@@ -1,0 +1,240 @@
+/*reset*/
+*{box-sizing: border-box;}
+html, body, ul, li, h1, h2, h3, h4, h5, p, img{margin: 0;padding: 0;}
+body{font-size: 16px;}
+h1, h2, h3, h4, h5 p, a{font-size: 1rem;}
+img{display: block;}
+a{color: black;text-decoration: none;}
+ul{list-style-type: none;}
+
+body, html
+{   min-width: 375px;
+    margin: auto;}
+
+$primary-color: #9356DC;
+$secondary-color: #FF79DA;
+$tertiary-color: #99E2D0;
+$background-color: #f6f6f6;
+
+/*text font*/
+body
+{   font-family: 'Roboto', sans-serif;}
+
+.logoohmyfood, .logoohmyfood_footer
+{   font-family: 'Shrikhand', cursive;}
+
+/*header*/
+.logoohmyfood
+{   display: flex;
+    justify-content: center;
+    font-size: 1.8rem;
+    padding-top: 1rem;}
+
+header
+{   height: 62px;}
+
+/*footer*/
+footer
+{   background-color: #353535;
+    padding: 1.2rem 0rem 2.5rem 1.2rem;}
+
+.logoohmyfood_footer
+{   font-size: 1.1rem;
+    display: block;
+    margin-bottom: .5rem;
+    color: white;}
+
+footer li
+{   color: white;
+    padding: .2rem;}
+
+.fork
+{   font-size: .8rem;
+    margin-right: 1rem;}
+
+.hands
+{   font-size: .8rem;
+    margin-right: .7rem;}
+
+/*main*/
+.localisation
+{   height: 50px;
+    box-shadow: 0px 2px 4px #CCC inset;
+    background-color: #eaeaea;
+    display: flex;
+    justify-content: center;
+    align-items: center;}
+
+.pin
+{   color: #353535;
+    font-size: 1rem;}
+
+.localisation p
+{   font-size: 1rem;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    padding: 0rem 1rem;
+    color: #353535;}
+
+.presentation
+{   display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $background-color;
+    padding-top: 2.5rem;
+    padding-bottom: 3.5rem;}
+
+h1
+{   font-size: 1.5rem;
+    padding-bottom: 1rem;
+    text-align: center;}
+
+h3
+{   font-size: 1.1rem;
+    font-weight: 300;
+    color: #353535;
+    text-align: center;}
+
+button
+{   background: linear-gradient(170deg, $secondary-color, $primary-color);
+    border-radius: 50px;
+    border: transparent;
+    margin-top: 2rem;
+    box-shadow: 0rem .5rem 1rem #eaeaea;
+    display: flex;
+    font-size: 1rem;
+    font-weight: 500;
+    min-width: 230px;
+    padding: 1rem;
+    color: white;       
+    justify-content: center;}
+
+.fonctionnement
+{   padding-bottom: 3.2rem;}
+
+h2
+{   font-size: 1.5rem;
+    padding-left: 1.2rem;
+    padding-top: 3rem;
+    margin-bottom: 1.8rem;}
+
+.phone, .list
+{   color: grey;}
+
+.shop
+{   color: $primary-color;}
+
+.steps_card
+{   background-color: #f6f6f6;
+    box-shadow: 0rem .5rem 1rem #eaeaea;           
+    border-radius: 20px;
+    margin: 0rem 1.2rem 1.6rem 2rem;
+    padding: 1rem;
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-start;}
+
+.three
+{   background-color: darken($background-color, 5%);}
+
+.steps_number
+{   color: white;
+    background-color: $primary-color;
+    display: flex;
+    justify-content: center;
+    margin-left: -1.7rem;
+    align-items: center;
+    font-size: .8rem;                                      /* pouquoi ca marche pas ??? */
+    width: 1.4rem;
+    height: 1.4rem;
+    border-radius: 50px;}
+
+.steps
+{   display: flex;
+    align-items: baseline;
+    padding-left: 1rem;}
+
+.steps i
+{   min-width: 20px;}
+
+.steps p
+{   font-size: 1rem;
+    padding-left: 1rem;
+    margin: 10px;
+    font-weight: 500;}
+
+.phone, .list, .shop
+{   font-size: 1rem;}
+
+i.phone
+{   font-size: 1.25rem;}
+
+.restaurants
+{   background-color: $background-color;}
+
+.restaurants_list
+{   padding-bottom: 3.5rem;}
+
+.restaurants_card
+{   border-radius: 15px;
+    max-height: 250px;
+    box-shadow: 0rem .5rem 1rem #eaeaea;
+    background-color: white;
+    margin: 20px;}
+
+.new
+{   display: flex;
+    justify-content: flex-end;}
+
+.restaurants_img
+{   height: 175px;
+    background-position-y: 100%;
+    background-size: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;}
+
+.new span {
+    color: #1b6150;
+    background-color: #99e2d0;
+    font-weight: 600;
+    font-size: .9em;
+    position: relative;
+    top: 1rem;
+    right: .75rem;
+    width: 75px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#lapalette
+{   background-image: url(images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);}
+
+#noteenchantee
+{   background-image: url(images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
+    background-position-y: 62%;}
+
+#alafrancaise
+{   background-image: url(images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);}
+
+#delice
+{   background-image: url(images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);}
+
+.restau_info
+{   display: flex;
+    justify-content: space-between;
+    padding: 15px;}
+
+.name
+{   font-weight: 600;
+    font-size: 1.15rem;}
+
+.place
+{   font-size: 1.15rem;}
+
+.heart
+{   padding: 10px 0px;
+    font-weight: 100;                               /*pourquoi ca marche pas???*/
+    font-size: 1.5rem;}

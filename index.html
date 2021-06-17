@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="main.css" />
+        <title>Ohmyfood!</title>
+        <script src="https://kit.fontawesome.com/de9191b1af.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+        <meta name="description" content="Réservez facilement vos repas :)">
+    </head>
+
+    <body>
+        <header>
+            <span class="logoohmyfood">ohmyfood</span>
+        </header>
+        <main>
+
+            <div class="localisation">    
+                <i class="fas fa-map-marker-alt pin"></i>
+                <p>Paris, Belleville</p>
+            </div>
+
+            <div class="presentation">
+                <h1>Réservez le menu qui <br> vous convient</h1>
+                <h3>Découvrez des restaurants d'exception, <br> séléctionnés par nos soins.</h3>
+                <button>Explorer nos restaurants</button>
+            </div>
+
+            <div class="fonctionnement">
+                <h2>Fonctionnement</h2>
+                <div class="steps_card">
+                    <p class="steps_number">1</p>
+                    <div class="steps">
+                        <i class="fas fa-mobile-alt phone"></i>
+                        <p>Choisissez un restaurant</p>
+                    </div>
+                </div>
+                <div class="steps_card">
+                    <p class="steps_number">2</p>
+                    <div class="steps">
+                        <i class="fas fa-list-ul list"></i>
+                        <p>Composez votre menu</p>
+                    </div>
+                </div>
+                <div class="steps_card three">
+                    <p class="steps_number">3</p>
+                    <div class="steps">
+                        <i class="fas fa-store shop"></i>   <!-- a faire en scss: background color plus sombre -->
+                        <p>Dégustez au restaurant</p>
+                    </div>
+                </div>
+            </div>         
+
+            <div class="restaurants">
+                <h2>Restaurants</h2>
+                <div class="restaurants_list">
+                    <div class="restaurants_card">
+                        <div class="restaurants_img" id="lapalette">
+                            <div class="new">
+                                <span>Nouveau</span>
+                            </div>
+                        </div>
+                        <div class="restau_info">
+                            <div class="name_place">
+                                <p class="name">La palette du goût</p>
+                                <p class="place">Ménilmontant</p>
+                            </div>
+                            <i class="far fa-heart heart"></i>
+                        </div>
+                    </div>
+                    <div class="restaurants_card">
+                        <div class="restaurants_img" id="noteenchantee">
+                            <div class="new">
+                                <span>Nouveau</span>
+                            </div>
+                        </div>
+                        <div class="restau_info">
+                            <div class="name_place">
+                                <p class="name">La note enchantée</p>
+                                <p class="place">Charonne</p>
+                            </div>
+                            <i class="far fa-heart heart"></i>
+                        </div>
+                    </div>
+                    <div class="restaurants_card">
+                        <div class="restaurants_img" id="alafrancaise"></div>
+                        <!-- <p class="new">Nouveau</p> -->
+                        <div class="restau_info">
+                            <div class="name_place">
+                                <p class="name">À la française</p>
+                                <p class="place">Cité Rouge</p>
+                            </div>
+                            <i class="far fa-heart heart"></i>
+                        </div>
+                    </div>
+                    <div class="restaurants_card">
+                        <div class="restaurants_img" id="delice"></div>
+                        <!-- <p class="new">Nouveau</p> -->
+                        <div class="restau_info">
+                            <div class="name_place">
+                                <p class="name">Le délice des sens</p>
+                                <p class="place">Folie-Méricourt</p>
+                            </div>
+                            <i class="far fa-heart heart"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>   
+
+        </main>
+        <footer>
+            <span class="logoohmyfood_footer">ohmyfood</span>
+            <ul>
+                <li><i class="fas fa-utensils fork"></i>Proposer un restaurant</li>
+                <li><i class="fas fa-hands-helping hands"></i>Devenir partenaire</li>
+                <li>Mentions légales</li>
+                <li>Contact</li>
+            </ul>
+        </footer>
+    </body>
