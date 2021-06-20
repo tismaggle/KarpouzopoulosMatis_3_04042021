@@ -4,8 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./sass/main.scss:styles.css"
+    "sass": "sass --watch .main.scss:styles.css -- style compressed",
+    "prefix": "postcss styles.css --use autoprefixer -d ."
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "browserslist": "last 4 versions"
   }
