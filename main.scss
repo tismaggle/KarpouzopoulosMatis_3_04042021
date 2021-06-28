@@ -44,7 +44,7 @@ footer
     margin-bottom: .5rem;
     color: white;}
 
-footer li
+footer a
 {   color: white;
     padding: .2rem;}
 
@@ -90,25 +90,38 @@ h1
     padding-bottom: 1rem;
     text-align: center;}
 
+.btn {
+    display: flex;
+    justify-content: center;
+    max-height: 50px;
+}
+
 h3
 {   font-size: 1.1rem;
     font-weight: 300;
     color: #353535;
+    margin-bottom: 2rem;
     text-align: center;}
 
 button
 {   background: linear-gradient(170deg, $secondary-color, $primary-color);
     border-radius: 50px;
     border: transparent;
-    margin-top: 2rem;
     box-shadow: 0rem .5rem 1rem #eaeaea;
-    display: flex;
     font-size: 1rem;
     font-weight: 500;
     min-width: 230px;
+    max-height: 50px;
     padding: 1rem;
     color: white;       
-    justify-content: center;}
+    justify-content: center;
+    transform: scale(1);
+        &:hover {
+            transform: scale(1.2);
+            cursor: pointer;
+            transition-delay: .15s;
+        }
+}
 
 .fonctionnement
 {   padding-bottom: 3.2rem;}
@@ -136,7 +149,7 @@ h2
     justify-content: flex-start;}
 
 .three
-{   background-color: darken($background-color, 5%);}
+{   background-color: darken($background-color, 2%);}
 
 .steps_number
 {   color: white;
@@ -160,7 +173,7 @@ h2
 
 .steps p
 {   font-size: 1rem;
-    padding-left: 1rem;
+    padding: 0rem 1rem;
     margin: 10px;
     font-weight: 500;}
 
@@ -201,6 +214,7 @@ i.phone
     font-size: .9em;
     position: relative;
     top: 1rem;
+    border-radius: 10px;
     right: .75rem;
     width: 75px;
     height: 30px;
@@ -237,4 +251,44 @@ i.phone
 .heart
 {   padding: 10px 0px;
     font-weight: 100;                               /*pourquoi ca marche pas???*/
-    font-size: 1.5rem;}
+    font-size: 1.5rem;
+    transform: scale(1);
+    &:hover {
+        transform: scale(1.15);
+    }
+}
+
+// .heart :active
+// {
+//     background-color: purple;
+// }
+
+@media (min-width: 890px)
+{
+    .logoohmyfood, .localisation {
+        justify-content: start;
+        padding-left: 1rem;
+    }
+    
+    .subtitle_button {
+        display: flex;
+        flex-direction: row;
+        gap: 220px;
+        margin-top: 2rem;
+    }
+    
+    .functionning_steps {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    h2 {
+        padding-left: 2.5rem;
+    }
+
+    footer {
+        padding-left: 5rem;
+        padding-top: 2rem;
+    }
+}

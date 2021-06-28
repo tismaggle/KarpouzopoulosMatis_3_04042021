@@ -1,198 +1,233 @@
 /*reset*/
 * {
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-  }
-  
-  html, body, ul, li, h1, h2, h3, h4, h5, p, img {
-    margin: 0;
-    padding: 0;
-  }
-  
-  body {
-    font-size: 16px;
-  }
-  
-  h1, h2, h3, h4, h5 p, a {
-    font-size: 1rem;
-  }
-  
-  img {
-    display: block;
-  }
-  
-  a {
-    color: black;
-    text-decoration: none;
-  }
-  
-  ul {
-    list-style-type: none;
-  }
-  
-  body, html {
-    min-width: 375px;
-    margin: auto;
-  }
-  
-  /*text font*/
-  body {
-    font-family: 'Roboto', sans-serif;
-  }
-  
-  .logoohmyfood, .logoohmyfood_footer, h1 {
-    font-family: 'Shrikhand', cursive;
-  }
-  
-  /*header*/
-  .logoohmyfood {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    font-size: 1.8rem;
-    padding-top: 1rem;
-  }
-  
-  header {
-    height: 62px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  
-  /*footer*/
-  footer {
-    background-color: #353535;
-    padding: 1.2rem 0rem 2.5rem 1.2rem;
-  }
-  
-  .logoohmyfood_footer {
-    font-size: 1.1rem;
-    display: block;
-    margin-bottom: .5rem;
-    color: white;
-  }
-  
-  footer li {
-    color: white;
-    padding: .2rem;
-  }
-  
-  .fork {
-    font-size: .8rem;
-    margin-right: 1rem;
-  }
-  
-  .hands {
-    font-size: .8rem;
-    margin-right: .7rem;
-  }
-  
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html, body, ul, li, h1, h2, h3, h4, h5, p, img {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 16px;
+}
+
+h1, h2, h3, h4, h5 p, a {
+  font-size: 1rem;
+}
+
+img {
+  display: block;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+body, html {
+  min-width: 375px;
+  margin: auto;
+}
+
+/*text font*/
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.logoohmyfood, .logoohmyfood_footer, h1 {
+  font-family: 'Shrikhand', cursive;
+}
+
+/*colors*/
+/*header*/
+.logoohmyfood {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  padding-top: 1rem;
+}
+
+header {
+  height: 62px;
+}
+
+.arrow {
+  position: absolute;
+  top: 1.5rem;
+  left: 1.5rem;
+  font-size: 1.25rem;
+}
+
+/*footer*/
+footer {
+  background-color: #353535;
+  margin-top: -1.5rem;
+  padding: 1.2rem 0rem 2.5rem 1.2rem;
+}
+
+.logoohmyfood_footer {
+  font-size: 1.1rem;
+  display: block;
+  margin-bottom: .5rem;
+  color: #fff;
+}
+
+footer li {
+  padding: .2rem;
+}
+
+footer a {
+  color: #fff;
+}
+
+.fork {
+  font-size: .8rem;
+  margin-right: 1rem;
+}
+
+.hands {
+  font-size: .8rem;
+  margin-right: .7rem;
+}
+
 /*main*/
-main
-{  
-    background-color: #f6f6f6;
+img {
+  width: 100%;
+  max-height: 220px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
-.enseigne
-{
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-        justify-content: space-between;
-    margin: 2.2rem 1.2rem 0px 1.2rem;
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
+main {
+  background-color: #f6f6f6;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  position: relative;
+  top: -1.5rem;
 }
 
-h1
-{
-    font-size: 1.8rem;
+.enseigne {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 2rem;
+  margin: -1rem 1.2rem 0px 1.2rem;
 }
 
-.heart
-{
-    padding: 10px 0px;
-    margin-right: 1rem;
-    font-weight: 100;
-    /*pourquoi ca marche pas???*/
-    font-size: 1.5rem;
+h1 {
+  font-size: 1.8rem;
 }
 
-h2
-{   
-    font-weight: 100;
-    text-decoration: #99E2D0 underline 3px;
-    margin: 2.5rem 0px 1rem 1.2rem;
+.heart {
+  padding: 10px 0px;
+  margin-right: 1rem;
+  font-weight: 100;
+  /*pourquoi ca marche pas???*/
+  font-size: 1.5rem;
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 
-.dish_card
-{
-    background-color: white;
-    -webkit-box-shadow: 0rem .5rem 1rem #eaeaea;
-            box-shadow: 0rem .5rem 1rem #eaeaea;
-    padding: .8rem;
-    margin: 1rem;
-    border-radius: 15px;
+.heart:hover {
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+  cursor: pointer;
 }
 
-h3
-{
-    font-size: 1.1rem;
-    font-weight: 600;
+.heart:focus {
+  background-color: purple;
 }
 
-.ingredients_price
-{   
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-        justify-content: space-between;
-    margin-top: 5px;
+h2 {
+  font-weight: 200;
+  margin: 2.5rem 0px 1rem 1.2rem;
 }
 
-.ingredients_price p
-{
-    font-size: .9rem;
+h2::after {
+  content: "";
+  display: block;
+  width: 38px;
+  height: 0;
+  border: 1.5px solid #99E2D0;
+  background-color: #99E2D0;
+  margin-top: 5px;
 }
 
-.dish_card span
-{   
-    font-weight: 600;
+.dish_card {
+  background-color: #fff;
+  -webkit-box-shadow: 0rem 0.5rem 1rem #eaeaea;
+  box-shadow: 0rem 0.5rem 1rem #eaeaea;
+  padding: .8rem;
+  margin: 1rem;
+  border-radius: 15px;
+}
+
+h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.ingredients_price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 5px;
+}
+
+.ingredients_price p {
+  font-size: .9rem;
+}
+
+.dish_card span {
+  font-weight: 600;
 }
 
 .btn {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 button {
-    background: linear-gradient(170deg, #FF79DA, #9356DC);
-    border-radius: 50px;
-    border: transparent;
-    -webkit-box-shadow: 0rem .5rem 1rem #eaeaea;
-            box-shadow: 0rem .5rem 1rem #eaeaea;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    font-size: 1rem;
-    font-weight: 500;
-    min-width: 200px;
-    padding: 1rem;
-    margin: 2rem 0px 5rem 0px;
-    color: white;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
+  background: linear-gradient(170deg, #FF79DA, #9356DC);
+  border-radius: 50px;
+  border: transparent;
+  -webkit-box-shadow: 0rem 0.5rem 1rem #eaeaea;
+  box-shadow: 0rem 0.5rem 1rem #eaeaea;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1rem;
+  font-weight: 500;
+  min-width: 200px;
+  padding: 1rem;
+  margin: 2rem 0px 5rem 0px;
+  color: #fff;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+/*# sourceMappingURL=enseigne.css.map */

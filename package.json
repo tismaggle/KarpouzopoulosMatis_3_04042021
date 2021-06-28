@@ -1,10 +1,10 @@
 {
-  "name": "writting-sass",
+  "name": "ohmyfood",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch .main.scss:styles.css -- style compressed",
+    "sass": "sass --watch [<.main.scss>:<main.css>] [<enseigne.scss>:<enseigne.css>] -- style compressed",
     "prefix": "postcss styles.css --use autoprefixer -d ."
   },
   "author": "",
