@@ -284,13 +284,15 @@ i.phone {
   background-color: #f6f6f6;
 }
 
+/*marche pas*/
 .restaurants_list {
   padding-bottom: 3.5rem;
+  background-color: #f6f6f6;
 }
 
 .restaurants_card {
   border-radius: 15px;
-  max-height: 250px;
+  height: 250px;
   -webkit-box-shadow: 0rem .5rem 1rem #eaeaea;
           box-shadow: 0rem .5rem 1rem #eaeaea;
   background-color: white;
@@ -418,9 +420,49 @@ i.phone {
   h2 {
     padding-left: 2.5rem;
   }
+  .restaurants_list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 40px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .restaurants_card {
+    margin: 15px 0px;
+    min-width: 390px;
+  }
   footer {
-    padding-left: 5rem;
-    padding-top: 2rem;
+    padding: 2rem;
+  }
+  footer span {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  footer ul {
+    /* marche pas*/
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer li {
+    width: 196px;
+    /* marche pas*/
   }
 }
 /*# sourceMappingURL=main.css.map */

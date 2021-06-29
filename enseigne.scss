@@ -186,6 +186,7 @@ h2::after
     padding: .8rem;
     margin: 1rem;
     border-radius: 15px;
+    cursor: pointer;
 }
 
 h3
@@ -245,3 +246,41 @@ button {
         -ms-flex-pack: center;
             justify-content: center;
   }
+
+  @media (min-width: 890px)
+{
+  .menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .dish_card {
+    width: 270px;
+    margin: 0px;
+  }
+}
+
+.choose {
+  background-color: $animation_color;
+  height: 100%;
+  width: 60px;
+}
+
+.dish_card {
+  &:active {
+      & > .choose {
+          transform: scaleX(0);
+          animation-name: choose_dish;
+      }
+  }
+}
+
+@keyframes choose_dish {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}

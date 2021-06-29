@@ -173,6 +173,7 @@ h2::after {
   padding: .8rem;
   margin: 1rem;
   border-radius: 15px;
+  cursor: pointer;
 }
 
 h3 {
@@ -229,5 +230,58 @@ button {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+}
+
+@media (min-width: 890px) {
+  .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .dish_card {
+    width: 270px;
+    margin: 0px;
+  }
+}
+
+.choose {
+  background-color: #99E2D0;
+  height: 100%;
+  width: 60px;
+}
+
+.dish_card:active > .choose {
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-animation-name: choose_dish;
+          animation-name: choose_dish;
+}
+
+@-webkit-keyframes choose_dish {
+  from {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+  }
+  to {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+}
+
+@keyframes choose_dish {
+  from {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+  }
+  to {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
 }
 /*# sourceMappingURL=enseigne.css.map */
