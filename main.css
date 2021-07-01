@@ -35,15 +35,6 @@ body, html {
   margin: auto;
 }
 
-/*text font*/
-body {
-  font-family: 'Roboto', sans-serif;
-}
-
-.logoohmyfood, .logoohmyfood_footer {
-  font-family: 'Shrikhand', cursive;
-}
-
 /*header*/
 .logoohmyfood {
   display: -webkit-box;
@@ -52,7 +43,6 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-size: 1.8rem;
   padding-top: 1rem;
 }
 
@@ -62,29 +52,23 @@ header {
 
 /*footer*/
 footer {
-  background-color: #353535;
   padding: 1.2rem 0rem 2.5rem 1.2rem;
 }
 
 .logoohmyfood_footer {
-  font-size: 1.1rem;
   display: block;
   margin-bottom: .5rem;
-  color: white;
 }
 
 footer a {
-  color: white;
   padding: .2rem;
 }
 
 .fork {
-  font-size: .8rem;
   margin-right: 1rem;
 }
 
 .hands {
-  font-size: .8rem;
   margin-right: .7rem;
 }
 
@@ -93,7 +77,6 @@ footer a {
   height: 50px;
   -webkit-box-shadow: 0px 2px 4px #CCC inset;
           box-shadow: 0px 2px 4px #CCC inset;
-  background-color: #eaeaea;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -105,14 +88,7 @@ footer a {
           align-items: center;
 }
 
-.pin {
-  color: #353535;
-  font-size: 1rem;
-}
-
 .localisation p {
-  font-size: 1rem;
-  font-weight: 500;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -120,7 +96,6 @@ footer a {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 0rem 1rem;
-  color: #353535;
 }
 
 .presentation {
@@ -134,13 +109,11 @@ footer a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #f6f6f6;
   padding-top: 2.5rem;
   padding-bottom: 3.5rem;
 }
 
 h1 {
-  font-size: 1.5rem;
   padding-bottom: 1rem;
   text-align: center;
 }
@@ -156,40 +129,8 @@ h1 {
 }
 
 h3 {
-  font-size: 1.1rem;
-  font-weight: 300;
-  color: #353535;
   margin-bottom: 2rem;
   text-align: center;
-}
-
-button {
-  background: linear-gradient(170deg, #FF79DA, #9356DC);
-  border-radius: 50px;
-  border: transparent;
-  -webkit-box-shadow: 0rem .5rem 1rem #eaeaea;
-          box-shadow: 0rem .5rem 1rem #eaeaea;
-  font-size: 1rem;
-  font-weight: 500;
-  min-width: 230px;
-  max-height: 50px;
-  padding: 1rem;
-  color: white;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-transform: scale(1);
-          transform: scale(1);
-  -webkit-transition: -webkit-transform .3s ease;
-  transition: -webkit-transform .3s ease;
-  transition: transform .3s ease;
-  transition: transform .3s ease, -webkit-transform .3s ease;
-}
-
-button:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-  cursor: pointer;
 }
 
 .fonctionnement {
@@ -197,22 +138,25 @@ button:hover {
 }
 
 h2 {
-  font-size: 1.5rem;
   padding-left: 1.2rem;
   padding-top: 3rem;
   margin-bottom: 1.8rem;
 }
 
-.phone, .list {
-  color: grey;
-}
-
-.shop {
-  color: #9356DC;
+button {
+  border-radius: 50px;
+  border: transparent;
+  -webkit-box-shadow: 0rem .5rem 1rem #eaeaea;
+          box-shadow: 0rem .5rem 1rem #eaeaea;
+  min-width: 230px;
+  max-height: 50px;
+  padding: 1rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .steps_card {
-  background-color: #f6f6f6;
   -webkit-box-shadow: 0rem .5rem 1rem #eaeaea;
           box-shadow: 0rem .5rem 1rem #eaeaea;
   border-radius: 20px;
@@ -229,13 +173,7 @@ h2 {
           justify-content: flex-start;
 }
 
-.three {
-  background-color: #f1f1f1;
-}
-
 .steps_number {
-  color: white;
-  background-color: #9356DC;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -246,8 +184,6 @@ h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: .8rem;
-  /* pouquoi ca marche pas ??? */
   width: 1.4rem;
   height: 1.4rem;
   border-radius: 50px;
@@ -268,28 +204,12 @@ h2 {
 }
 
 .steps p {
-  font-size: 1rem;
   padding: 0rem 1rem;
   margin: 10px;
-  font-weight: 500;
 }
 
-.phone, .list, .shop {
-  font-size: 1rem;
-}
-
-i.phone {
-  font-size: 1.25rem;
-}
-
-.restaurants {
-  background-color: #f6f6f6;
-}
-
-/*marche pas*/
 .restaurants_list {
   padding-bottom: 3.5rem;
-  background-color: #f6f6f6;
 }
 
 .restaurants_card {
@@ -297,7 +217,6 @@ i.phone {
   height: 250px;
   -webkit-box-shadow: 0rem .5rem 1rem #eaeaea;
           box-shadow: 0rem .5rem 1rem #eaeaea;
-  background-color: white;
   margin: 20px;
 }
 
@@ -320,10 +239,6 @@ i.phone {
 }
 
 .new span {
-  color: #1b6150;
-  background-color: #99e2d0;
-  font-weight: 600;
-  font-size: .9em;
   position: relative;
   top: 1rem;
   border-radius: 10px;
@@ -339,6 +254,137 @@ i.phone {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.restau_info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 15px;
+}
+
+#choosebox {
+  display: none;
+}
+
+#colored {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.shape_heart {
+  padding: 10px 0px;
+  position: absolute;
+  right: 35px;
+  cursor: pointer;
+}
+
+.full_heart {
+  padding: 10px 0px;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #353535;
+}
+
+.logoohmyfood_footer, footer a {
+  color: white;
+}
+
+.localisation {
+  background-color: #eaeaea;
+}
+
+.pin {
+  color: #353535;
+}
+
+.localisation p {
+  color: #353535;
+}
+
+.presentation {
+  background-color: #f6f6f6;
+}
+
+h3 {
+  color: #353535;
+}
+
+button {
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(#FF79DA, #9356DC);
+  color: white;
+}
+
+.phone, .list {
+  color: grey;
+}
+
+.shop {
+  color: #9356DC;
+}
+
+.three {
+  background-color: #f1f1f1;
+}
+
+.steps_card {
+  background-color: #f6f6f6;
+}
+
+.steps_number {
+  color: white;
+}
+
+.steps_number {
+  background-color: #9356DC;
+}
+
+.restaurants {
+  background-color: #f6f6f6;
+}
+
+.restaurants_list {
+  background-color: #f6f6f6;
+}
+
+.restaurants_card {
+  background-color: white;
+}
+
+.new span {
+  background-color: #99e2d0;
+  color: #1b6150;
+}
+
+#colored {
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(#FF79DA, #9356DC);
+}
+
+.full_heart {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background-image: linear-gradient(#FF79DA, #9356DC);
+}
+
+button {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: -webkit-transform .3s ease;
+  transition: -webkit-transform .3s ease;
+  transition: transform .3s ease;
+  transition: transform .3s ease, -webkit-transform .3s ease;
+}
+
+button:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  cursor: pointer;
 }
 
 #lapalette {
@@ -358,44 +404,9 @@ i.phone {
   background-image: url(images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
 }
 
-.restau_info {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 15px;
-}
-
-.name {
-  font-weight: 600;
-  font-size: 1.15rem;
-}
-
-.place {
-  font-size: 1.15rem;
-}
-
-#choosebox {
-  display: none;
-}
-
-#colored {
-  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
-  background: linear-gradient(#FF79DA, #9356DC);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
 .shape_heart {
-  padding: 10px 0px;
-  font-size: 1.5rem;
-  position: absolute;
-  right: 35px;
   -webkit-transform: scale(1);
           transform: scale(1);
-  cursor: pointer;
 }
 
 .shape_heart:hover {
@@ -404,11 +415,6 @@ i.phone {
 }
 
 .full_heart {
-  padding: 10px 0px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
-  background-image: linear-gradient(#FF79DA, #9356DC);
-  font-size: 1.5rem;
-  cursor: pointer;
   -webkit-transform: scale(1);
           transform: scale(1);
 }

@@ -1,0 +1,94 @@
+$primary-color: #9356DC;
+$secondary-color: #FF79DA;
+$tertiary-color: #99E2D0;
+$button-color: linear-gradient($secondary-color, $primary-color);
+$button-sec-color: white;
+$localisation-color: #eaeaea;
+$steps-numb-color: white;
+$master-background-color: #f6f6f6;
+$footer-color: #353535;
+$footer-sec-color: white;
+$text-color: #353535;
+
+footer {
+    background-color: $footer-color;
+}
+
+.logoohmyfood_footer, footer a {
+    color: $footer-sec-color;
+}
+
+.localisation {
+    background-color: $localisation-color;
+}
+
+.pin {
+    color: $text-color;
+}
+
+.localisation p {
+    color: $text-color;
+}
+
+.presentation {
+    background-color: $master-background-color;
+}
+
+h3 {
+    color: $text-color;
+}
+
+button {
+    background: $button-color;
+    color: $button-sec-color;   
+}
+
+.phone, .list {
+    color: grey;
+}
+
+.shop {
+    color: $primary-color;
+}
+
+.three {
+    background-color: darken($master-background-color, 2%);
+}
+
+.steps_card {
+    background-color: #f6f6f6;
+}
+
+.steps_number {
+    color: $steps-numb-color;
+}
+
+.steps_number {
+    background-color: $primary-color;
+}
+
+.restaurants {
+    background-color: $master-background-color;
+}
+
+.restaurants_list {
+    background-color: $master-background-color;
+}
+
+.restaurants_card {
+    background-color: white;
+}
+
+.new span {
+    background-color: #99e2d0;
+    color: #1b6150;
+}
+
+#colored {
+    background: $button-color;
+}
+
+.full_heart {
+    background-image: $button-color;
+}
+
