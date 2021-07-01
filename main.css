@@ -180,14 +180,16 @@ button {
           justify-content: center;
   -webkit-transform: scale(1);
           transform: scale(1);
+  -webkit-transition: -webkit-transform .3s ease;
+  transition: -webkit-transform .3s ease;
+  transition: transform .3s ease;
+  transition: transform .3s ease, -webkit-transform .3s ease;
 }
 
 button:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
   cursor: pointer;
-  -webkit-transition-delay: .15s;
-          transition-delay: .15s;
 }
 
 .fonctionnement {
@@ -310,6 +312,7 @@ i.phone {
 
 .restaurants_img {
   height: 175px;
+  width: 100%;
   background-position-y: 100%;
   background-size: cover;
   border-top-left-radius: 15px;
@@ -374,18 +377,49 @@ i.phone {
   font-size: 1.15rem;
 }
 
-.heart {
+#choosebox {
+  display: none;
+}
+
+#colored {
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(#FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.shape_heart {
   padding: 10px 0px;
-  font-weight: 100;
-  /*pourquoi ca marche pas???*/
   font-size: 1.5rem;
+  position: absolute;
+  right: 35px;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  cursor: pointer;
+}
+
+.shape_heart:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.full_heart {
+  padding: 10px 0px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background-image: linear-gradient(#FF79DA, #9356DC);
+  font-size: 1.5rem;
+  cursor: pointer;
   -webkit-transform: scale(1);
           transform: scale(1);
 }
 
-.heart:hover {
-  -webkit-transform: scale(1.15);
-          transform: scale(1.15);
+.full_heart:active .shape_heart::before {
+  display: none;
+}
+
+.full_heart:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 @media (min-width: 890px) {

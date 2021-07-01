@@ -13,6 +13,7 @@ body, html
 
 $primary-color: #9356DC;
 $secondary-color: #FF79DA;
+$button-color: linear-gradient($secondary-color, $primary-color);
 $tertiary-color: #99E2D0;
 $background-color: #f6f6f6;
 
@@ -116,10 +117,10 @@ button
     color: white;       
     justify-content: center;
     transform: scale(1);
+    transition: transform .3s ease;
         &:hover {
             transform: scale(1.2);
             cursor: pointer;
-            transition-delay: .15s;
         }
 }
 
@@ -203,6 +204,7 @@ i.phone
 
 .restaurants_img
 {   height: 175px;
+    width: 100%;
     background-position-y: 100%;
     background-size: cover;
     border-top-left-radius: 15px;
@@ -249,20 +251,61 @@ i.phone
 .place
 {   font-size: 1.15rem;}
 
-.heart
-{   padding: 10px 0px;
-    font-weight: 100;                               /*pourquoi ca marche pas???*/
+#choosebox {
+    display: none;
+}
+
+// #choosebox:checked + label > i {
+//     -webkit-text-fill-color: transparent;
+// }
+
+#colored {
+    background: $button-color;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+// .full_heart:before {
+//     display: none;
+// }
+
+.shape_heart {
+    padding: 10px 0px;
     font-size: 1.5rem;
+    position: absolute;
+    right: 35px;
     transform: scale(1);
+    cursor: pointer;
+  
     &:hover {
-        transform: scale(1.15);
+        transform: scale(1.2);
     }
 }
 
-// .heart :active
-// {
-//     background-color: purple;
-// }
+.full_heart
+{   padding: 10px 0px;
+    background-image: $button-color;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transform: scale(1);
+    &:active {
+        .shape_heart::before {
+            display: none;
+        }
+    }
+
+    &:hover {
+        transform: scale(1.2);
+    }
+}
+
+
+// transform: scale(1);
+//     transition: transform .3s ease;
+//         &:hover {
+//             transform: scale(1.2);
+//             cursor: pointer;
+//         }
 
 @media (min-width: 890px)
 {
