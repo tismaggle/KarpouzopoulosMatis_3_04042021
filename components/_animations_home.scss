@@ -4,10 +4,11 @@ button {
         &:hover {
             transform: scale(1.2);
             cursor: pointer;
+            background-color: lighten($button-color, 10%);          /*marche pas*/
         }
 }
 
-.shape_heart {
+.fa-heart {
     transform: scale(1);
   
     &:hover {
@@ -15,16 +16,12 @@ button {
     }
 }
 
-.full_heart
-{   transform: scale(1);
-    &:active {
-        .shape_heart::before {
-            display: none;
-        }
-    }
-
-    &:hover {
-        transform: scale(1.2);
-    }
+.fa-heart::before {
+    content: "";
+    transition: color 1s ease-in;
 }
 
+.fa-heart:hover::before{
+    color: blue /*button-color*/;            /*pourquoi c'est rouge ????????????????*/
+    font-weight: bold;
+}

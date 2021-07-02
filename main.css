@@ -236,6 +236,9 @@ button {
   background-size: cover;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  /*marche pas*/
 }
 
 .new span {
@@ -266,27 +269,12 @@ button {
   padding: 15px;
 }
 
-#choosebox {
-  display: none;
-}
-
-#colored {
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.shape_heart {
-  padding: 10px 0px;
-  position: absolute;
-  right: 35px;
-  cursor: pointer;
-}
-
-.full_heart {
+.heart {
   padding: 10px 0px;
   cursor: pointer;
 }
 
+/*colors*/
 footer {
   background-color: #353535;
 }
@@ -362,14 +350,82 @@ button {
   color: #1b6150;
 }
 
-#colored {
-  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
-  background: linear-gradient(#FF79DA, #9356DC);
-}
-
-.full_heart {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
-  background-image: linear-gradient(#FF79DA, #9356DC);
+@media (min-width: 890px) {
+  .logoohmyfood, .localisation {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    padding-left: 1rem;
+  }
+  .subtitle_button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 220px;
+    margin-top: 2rem;
+  }
+  .functionning_steps {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  h2 {
+    padding-left: 2.5rem;
+  }
+  .restaurants_list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 40px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .restaurants_card {
+    margin: 15px 0px;
+    min-width: 390px;
+  }
+  footer {
+    padding: 2rem;
+  }
+  footer span {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  footer ul {
+    /* marche pas*/
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer li {
+    width: 196px;
+    /* marche pas*/
+  }
 }
 
 /*text font*/
@@ -455,7 +511,7 @@ i.phone {
   font-size: 1.15rem;
 }
 
-.shape_heart, .full_heart {
+.heart {
   font-size: 1.5rem;
 }
 
@@ -474,122 +530,29 @@ button:hover {
   cursor: pointer;
 }
 
-#lapalette {
-  background-image: url(images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
-}
-
-#noteenchantee {
-  background-image: url(images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
-  background-position-y: 62%;
-}
-
-#alafrancaise {
-  background-image: url(images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
-}
-
-#delice {
-  background-image: url(images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
-}
-
-.shape_heart {
+.heart {
   -webkit-transform: scale(1);
           transform: scale(1);
 }
 
-.shape_heart:hover {
+.heart:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
 }
 
-.full_heart {
-  -webkit-transform: scale(1);
-          transform: scale(1);
+/*colors*/
+.fa-heart {
+  color: black;
 }
 
-.full_heart:active .shape_heart::before {
-  display: none;
+.fa-heart::before {
+  content: "";
+  -webkit-transition: color 1s ease-in;
+  transition: color 1s ease-in;
 }
 
-.full_heart:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-}
-
-@media (min-width: 890px) {
-  .logoohmyfood, .localisation {
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: start;
-    padding-left: 1rem;
-  }
-  .subtitle_button {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    gap: 220px;
-    margin-top: 2rem;
-  }
-  .functionning_steps {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-  }
-  h2 {
-    padding-left: 2.5rem;
-  }
-  .restaurants_list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    margin: 40px;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .restaurants_card {
-    margin: 15px 0px;
-    min-width: 390px;
-  }
-  footer {
-    padding: 2rem;
-  }
-  footer span {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  footer ul {
-    /* marche pas*/
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  footer li {
-    width: 196px;
-    /* marche pas*/
-  }
+.fa-heart:hover::before {
+  color: red;
+  font-weight: bold;
 }
 /*# sourceMappingURL=main.css.map */

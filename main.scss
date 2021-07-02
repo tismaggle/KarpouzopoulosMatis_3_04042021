@@ -4,31 +4,3 @@
 @import "./base/typography_home";
 @import "./components/animations_home";
 @import "./utils/variables";
-
-#lapalette
-{   background-image: url(images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);}
-
-#noteenchantee
-{   background-image: url(images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
-    background-position-y: 62%;}
-
-#alafrancaise
-{   background-image: url(images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);}
-
-#delice
-{   background-image: url(images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);}
-
-// #choosebox:checked + label > i {
-//     -webkit-text-fill-color: transparent;
-// }
-
-// .full_heart:before {
-//     display: none;
-// }
-
-// transform: scale(1);
-//     transition: transform .3s ease;
-//         &:hover {
-//             transform: scale(1.2);
-//             cursor: pointer;
-//         }

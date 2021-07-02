@@ -146,10 +146,11 @@ button {
     margin: 20px;
 }
 
-.new {
-    display: flex;
-    justify-content: flex-end;
-}
+// .new {
+//     position: absolute;
+//     top: 4rem;
+//     left: -2rem;
+// }
 
 .restaurants_img {
     height: 175px;
@@ -158,12 +159,11 @@ button {
     background-size: cover;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
+    object-fit: cover;          /*marche pas*/
 }
 
 .new span {
-    position: relative;
-    top: 1rem;
-    border-radius: 10px;
+    border-radius: 3px;
     right: .75rem;
     width: 75px;
     height: 30px;
@@ -178,23 +178,7 @@ button {
     padding: 15px;
 }
 
-#choosebox {
-    display: none;
-}
+// #choosebox {
+//     display: none;
+// }
 
-#colored {
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.shape_heart {
-    padding: 10px 0px;
-    position: absolute;
-    right: 35px;
-    cursor: pointer;
-}
-
-.full_heart {
-    padding: 10px 0px;
-    cursor: pointer;
-}
