@@ -39,27 +39,20 @@ button {
     color: $primary-color;
 }
 
-.three {
-    background-color: darken($master-background-color, 2%);
-}
-
 .steps_card {
     background-color: #f6f6f6;
 }
 
-.steps_number {
-    color: $steps-numb-color;
+.three {
+    background-color: darken($master-background-color, 3%);
 }
 
 .steps_number {
+    color: $steps-numb-color;
     background-color: $primary-color;
 }
 
-.restaurants {
-    background-color: $master-background-color;
-}
-
-.restaurants_list {
+.restaurants, .restaurants_list {
     background-color: $master-background-color;
 }
 
@@ -71,12 +64,3 @@ button {
     background-color: #99e2d0;
     color: #1b6150;
 }
-
-#colored {
-    background: $button-color;
-}
-
-.full_heart {
-    background-image: $button-color;
-}
-

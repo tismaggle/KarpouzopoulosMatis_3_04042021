@@ -1,3 +1,5 @@
+/*colors*/
+/*animations*/
 /*reset*/
 * {
   -webkit-box-sizing: border-box;
@@ -35,6 +37,49 @@ body, html {
   margin: auto;
 }
 
+/*header*/
+.logoohmyfood {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 1rem;
+}
+
+header {
+  height: 62px;
+}
+
+/*footer*/
+footer {
+  padding: 1.2rem 0rem 2.5rem 1.2rem;
+}
+
+.logoohmyfood_footer {
+  display: block;
+  margin-bottom: .5rem;
+}
+
+footer a {
+  display: block;
+  /*pour avoir du margin en x et en y*/
+  margin: .3rem;
+}
+
+.fork {
+  margin-right: 1rem;
+}
+
+.hands {
+  margin-right: .7rem;
+}
+
+main {
+  background-color: #f6f6f6;
+}
+
 /*text font*/
 body {
   font-family: 'Roboto', sans-serif;
@@ -44,8 +89,16 @@ body {
   font-family: 'Shrikhand', cursive;
 }
 
-/*colors*/
-/*animations*/
+h1 {
+  font-size: 1.8rem;
+}
+
+.heart {
+  font-size: 1.5rem;
+  font-weight: 100;
+  /*pourquoi ca marche pas???*/
+}
+
 /*header*/
 .logoohmyfood {
   display: -webkit-box;
@@ -114,7 +167,6 @@ img {
 }
 
 main {
-  background-color: #f6f6f6;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
   position: relative;
@@ -130,10 +182,6 @@ main {
           justify-content: space-between;
   padding-top: 2rem;
   margin: -1rem 1.2rem 0px 1.2rem;
-}
-
-h1 {
-  font-size: 1.8rem;
 }
 
 .heart {

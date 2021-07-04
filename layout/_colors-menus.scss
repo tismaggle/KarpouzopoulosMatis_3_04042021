@@ -1,0 +1,28 @@
+footer {
+    background-color: $footer-color;
+}
+
+.logoohmyfood_footer {
+    color: $footer-text_color;
+}
+
+footer a {
+    color: $footer-text_color;
+}
+
+main {  
+    background-color: $primary-color;
+}
+
+.global {
+    background-color: $secondary_color;
+}
+
+.add_to_cart {
+    color: white;
+}
+
+button {
+    background: $button-color;
+    color: $secondary_color;
+}

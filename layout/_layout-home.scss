@@ -8,39 +8,6 @@ a{color: black; text-decoration: none;}
 ul{list-style-type: none;}
 body, html{min-width: 375px; margin: auto;}
 
-/*header*/
-.logoohmyfood {
-    display: flex;
-    justify-content: center;
-    padding-top: 1rem;
-}
-
-header {
-    height: 62px;
-}
-
-/*footer*/
-footer {
-    padding: 1.2rem 0rem 2.5rem 1.2rem;
-}
-
-.logoohmyfood_footer {
-    display: block;
-    margin-bottom: .5rem;
-}
-
-footer a {
-    padding: .2rem;
-}
-
-.fork {
-    margin-right: 1rem;
-}
-
-.hands {
-    margin-right: .7rem;
-}
-
 /*main*/
 .localisation {
     height: 50px;
@@ -96,6 +63,7 @@ button {
     box-shadow: 0rem .5rem 1rem #eaeaea;
     min-width: 230px;
     max-height: 50px;
+    margin: auto /*0px 35px*/;           /*live server ko...........*/
     padding: 1rem;    
     justify-content: center;
 }
@@ -160,10 +128,16 @@ button {
     border-top-right-radius: 15px;
 }
 
+// .new {
+//     position: absolute;
+//     top: 4rem;
+//     left: -2rem;
+// }
+
 .new span {
-    position: relative;
-    top: 1rem;
-    border-radius: 10px;
+    // position: relative;
+    // top: 1rem;
+    border-radius: 2.5px;
     right: .75rem;
     width: 75px;
     height: 30px;
@@ -180,21 +154,4 @@ button {
 
 #choosebox {
     display: none;
-}
-
-#colored {
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.shape_heart {
-    padding: 10px 0px;
-    position: absolute;
-    right: 35px;
-    cursor: pointer;
-}
-
-.full_heart {
-    padding: 10px 0px;
-    cursor: pointer;
 }

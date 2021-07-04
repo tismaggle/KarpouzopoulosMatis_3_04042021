@@ -1,0 +1,84 @@
+button {
+    transform: scale(1);
+    transition: transform .3s ease;
+        &:hover {
+            transform: scale(1.2);
+            cursor: pointer;
+            background-color: lighten($button-color, 10%); 
+        }
+}
+
+.fa-heart {
+    transform: scale(1);
+  
+    &:hover {
+        transform: scale(1.2);
+        cursor: pointer;
+    }
+}
+
+.fa-heart::before {
+    content: "";
+    transition: color 1s ease-in;
+}
+
+.fa-heart:hover::before{
+    color: blue /*button-color*/;            /*pourquoi c'est rouge ????????????????*/
+    font-weight: bold;
+}
+
+.global {
+    animation: fadein_riseup $anim-dur ease-in;
+
+    @keyframes fadein_riseup {
+        from {
+            opacity:0;
+            margin-top: 5%;
+        }
+        to {
+            opacity:1;
+            margin-top: 0%;
+        }
+    }
+
+    &__check {
+        transform-origin: right center;
+        transition: transform .25s cubic-bezier(.17,.67,.83,.67);
+        animation-fill-mode: forwards;
+        transition-delay: .25s;
+        transform: scaleX(0);
+        background-color: $animation_color;
+        border-bottom-right-radius: 15px;
+        border-top-right-radius: 15px;
+        width: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    &:hover {
+        > .global__check {
+            transform: scaleX(1);
+        }
+        > .dish_card span {
+            transform: translateX(-70px);
+        }
+        & .add_to_cart {
+            transform: rotate(360deg);
+        }
+    }
+}
+
+.add_to_cart {
+    transition: transform .4s ease-in-out;
+    transition-delay: .2s;
+}
+
+button {
+    transform: scale(1);
+    transition: transform .3s ease;
+        &:hover {
+            transform: scale(1.15);
+            cursor: pointer;
+        }
+}

@@ -1,9 +1,11 @@
-@import "./layout/layout_home";
-@import "./layout/colors_home";
-@import "./layout/media_queries_home";
-@import "./base/typography_home";
-@import "./components/animations_home";
-@import "./utils/variables";
+@import "./layout/layout-home";
+@import "./layout/layout-header-home";
+@import "./layout/layout-footer-home";
+@import "./layout/colors-home";
+@import "./layout/mediaqueries-home";
+@import "./base/typography-home";
+@import "./components/animations-home";
+@import "./utils/variables-home";
 
 #lapalette
 {   background-image: url(images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);}

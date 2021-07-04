@@ -1,0 +1,22 @@
+/*header*/
+.logoohmyfood {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-top: 1rem;
+}
+
+header {
+    height: 62px;
+}
+
+.arrow {
+    position: absolute;
+    top: 1.5rem;
+    left: 1.5rem;
+    font-size: 1.25rem;
+}
+
