@@ -1,0 +1,10 @@
+button {
+    transform: scale(1);
+    transition: transform .3s ease;
+    opacity: 1;
+        &:hover {
+            transform: scale(1.2);
+            cursor: pointer;
+            opacity: .8;
+        }
+}

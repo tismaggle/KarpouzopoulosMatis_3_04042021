@@ -1,11 +1,12 @@
+@import "./utils/variables";
 @import "./layout/layout-home";
-@import "./layout/layout-header-home";
-@import "./layout/layout-footer-home";
 @import "./layout/colors-home";
 @import "./layout/mediaqueries-home";
 @import "./base/typography-home";
-@import "./components/animations-home";
-@import "./utils/variables-home";
+@import "./components/heart";
+@import "./components/bouton";
+@import "./layout/footer";
+@import "./layout/header";
 
 #lapalette
 {   background-image: url(images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);}
@@ -19,18 +20,3 @@
 
 #delice
 {   background-image: url(images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);}
-
-// #choosebox:checked + label > i {
-//     -webkit-text-fill-color: transparent;
-// }
-
-// .full_heart:before {
-//     display: none;
-// }
-
-// transform: scale(1);
-//     transition: transform .3s ease;
-//         &:hover {
-//             transform: scale(1.2);
-//             cursor: pointer;
-//         }

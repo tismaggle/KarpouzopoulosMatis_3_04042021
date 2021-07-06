@@ -1,34 +1,5 @@
-button {
-    transform: scale(1);
-    transition: transform .3s ease;
-        &:hover {
-            transform: scale(1.2);
-            cursor: pointer;
-            background-color: lighten($button-color, 10%); 
-        }
-}
-
-.fa-heart {
-    transform: scale(1);
-  
-    &:hover {
-        transform: scale(1.2);
-        cursor: pointer;
-    }
-}
-
-.fa-heart::before {
-    content: "";
-    transition: color 1s ease-in;
-}
-
-.fa-heart:hover::before{
-    color: blue /*button-color*/;            /*pourquoi c'est rouge ????????????????*/
-    font-weight: bold;
-}
-
 .global {
-    animation: fadein_riseup $anim-dur ease-in;
+    animation: fadein_riseup 2.5s ease-in;
 
     @keyframes fadein_riseup {
         from {
@@ -36,7 +7,7 @@ button {
             margin-top: 5%;
         }
         to {
-            opacity:1;
+            opacity: 1;
             margin-top: 0%;
         }
     }
@@ -72,13 +43,4 @@ button {
 .add_to_cart {
     transition: transform .4s ease-in-out;
     transition-delay: .2s;
-}
-
-button {
-    transform: scale(1);
-    transition: transform .3s ease;
-        &:hover {
-            transform: scale(1.15);
-            cursor: pointer;
-        }
 }

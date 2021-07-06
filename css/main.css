@@ -1,6 +1,5 @@
 /*colors*/
 * {
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -38,40 +37,22 @@ body, html {
 /*main*/
 .localisation {
   height: 50px;
-  -webkit-box-shadow: 0px 2px 4px #CCC inset;
-          box-shadow: 0px 2px 4px #CCC inset;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  box-shadow: 0px 2px 4px #CCC inset;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .localisation p {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   padding: 0rem 1rem;
 }
 
 .presentation {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   padding-top: 2.5rem;
   padding-bottom: 3.5rem;
 }
@@ -82,12 +63,8 @@ h1 {
 }
 
 .btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   max-height: 50px;
 }
 
@@ -109,58 +86,38 @@ h2 {
 button {
   border-radius: 50px;
   border: transparent;
-  -webkit-box-shadow: 0rem .5rem 1rem #eaeaea;
-          box-shadow: 0rem .5rem 1rem #eaeaea;
+  box-shadow: 0rem .5rem 1rem #eaeaea;
   min-width: 230px;
   max-height: 50px;
   margin: auto;
   /*live server ko...........*/
   padding: 1rem;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 .steps_card {
-  -webkit-box-shadow: 0rem .5rem 1rem #eaeaea;
-          box-shadow: 0rem .5rem 1rem #eaeaea;
+  box-shadow: 0rem .5rem 1rem #eaeaea;
   border-radius: 20px;
   margin: 0rem 1.2rem 1.6rem 2rem;
   padding: 1rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  align-items: baseline;
+  justify-content: flex-start;
 }
 
 .steps_number {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   margin-left: -1.7rem;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   width: 1.4rem;
   height: 1.4rem;
   border-radius: 50px;
 }
 
 .steps {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  align-items: baseline;
   padding-left: 1rem;
 }
 
@@ -180,18 +137,13 @@ button {
 .restaurants_card {
   border-radius: 15px;
   height: 250px;
-  -webkit-box-shadow: 0rem .5rem 1rem #eaeaea;
-          box-shadow: 0rem .5rem 1rem #eaeaea;
+  box-shadow: 0rem .5rem 1rem #eaeaea;
   margin: 20px;
 }
 
 .new {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  justify-content: flex-end;
 }
 
 .restaurants_img {
@@ -208,24 +160,14 @@ button {
   right: .75rem;
   width: 75px;
   height: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .restau_info {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   padding: 15px;
 }
 
@@ -375,47 +317,38 @@ i.phone {
   font-size: 1.5rem;
 }
 
-.fa-heart {
-  -webkit-transform: scale(1);
-          transform: scale(1);
+.fas {
+  transform: scale(1);
+  opacity: 0;
 }
 
-.fa-heart:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+.fas:hover {
+  transform: scale(1.2);
   cursor: pointer;
+  opacity: 1;
 }
 
-.fa-heart::before {
-  content: "";
-  -webkit-transition: color 1s ease-in;
-  transition: color 1s ease-in;
+.far {
+  opacity: 1;
 }
 
-.fa-heart:hover::before {
-  color: blue;
-  /*pourquoi c'est rouge ????????????????*/
-  font-weight: bold;
+.far:hover {
+  opacity: 0;
 }
 
 button {
-  -webkit-transform: scale(1);
-          transform: scale(1);
-  -webkit-transition: -webkit-transform .3s ease;
-  transition: -webkit-transform .3s ease;
+  transform: scale(1);
   transition: transform .3s ease;
-  transition: transform .3s ease, -webkit-transform .3s ease;
   opacity: 1;
 }
 
 button:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  transform: scale(1.2);
   cursor: pointer;
   opacity: .8;
 }
 
-/*footer*/
+/*display*/
 footer {
   padding: 1.2rem 0rem 2.5rem 1.2rem;
 }
@@ -439,6 +372,7 @@ footer a {
   margin-right: .7rem;
 }
 
+/*font and size*/
 .logoohmyfood, .logoohmyfood_footer {
   font-family: 'Shrikhand', cursive;
 }
@@ -455,16 +389,25 @@ footer a {
   font-size: .8rem;
 }
 
+/*colors*/
+footer {
+  background-color: #353535;
+}
+
+.logoohmyfood_footer {
+  color: white;
+}
+
+footer a {
+  color: white;
+}
+
 .logoohmyfood {
   font-size: 1.8rem;
 }
 
 .logoohmyfood {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
   padding-top: 1rem;
 }

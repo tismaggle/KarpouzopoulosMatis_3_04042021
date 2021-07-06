@@ -1,9 +1,9 @@
-@import "./utils/variables-menus";
-@import "./layout/layout-menus";
-@import "./layout/layout-header-menus";
-@import "./layout/layout-footer-menus";
+@import "./utils/variables";
 @import "./layout/colors-menus";
+@import "./layout/layout-menus";
+@import "./layout/header";
+@import "./layout/footer";
 @import "./layout/mediaqueries-menus";
 @import "./base/typography-menus";
-@import "./components/animations-menus";
-
+@import "./components/fadein_riseup";
+@import "./components/heart";
