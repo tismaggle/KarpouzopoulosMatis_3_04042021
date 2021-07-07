@@ -1,56 +1,67 @@
-// @media (min-width: 890px)
-// {
-//     .logoohmyfood, .localisation {
-//         justify-content: start;
-//         padding-left: 1rem;
-//     }
+ @media (min-width: 700px)
+ {
+     .logoohmyfood, .localisation {
+         justify-content: start;
+         padding-left: 1rem;
+     }
     
-//     .subtitle_button {
-//         display: flex;
-//         flex-direction: row;
-//         gap: 220px;
-//         margin-top: 2rem;
-//     }
+     .subtitle_button {
+         display: flex;
+         width: 100%;
+         justify-content: space-around;
+         flex-direction: row;
+         margin-top: 2rem;
+     }
+
+     .action {
+         min-width: 230px;
+     }
+
+     .functionning_steps {
+         width: 600px;
+         margin: auto;
+     }
     
-//     .functionning_steps {
-//         display: flex;
-//         flex-direction: row;
-//         justify-content: space-around;
-//     }
+     .steps_card {
+         width: 550px;
+     }
 
-//     h2 {
-//         padding-left: 2.5rem;
-//     }
+     h2 {
+         padding-left: 2.5rem;
+     }
 
-//     .restaurants_list {
-//         display: flex;
-//         grid-template-columns: repeat(2,1fr);
-//         justify-content: space-between;
-//         margin: 40px;
-//         flex-wrap: wrap;
-//        }
+     .restaurants_list {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: 300px 300px 300px 300px;
+         margin: 40px;
+        }
 
-//     .restaurants_card {
-//         margin: 15px 0px;
-//         min-width: 390px;
-//     }
+     .restaurants_card {
+         margin: 15px 0px;
+         min-width: 390px;
+     }
 
-//     footer {
-//         padding: 2rem;
-//     }
+@media (min-width: 700px) {
 
-//     footer span {
-//         display: flex;
-//         justify-content: center;
-//     }
+}
 
-//     footer ul {                                       /* marche pas*/
-//         display: flex;
-//         justify-content: space-between;
-//         align-items: center;
-//     }
+//      footer {
+//          padding: 2rem;
+//      }
 
-//     footer li {
-//         width: 196px;                      /* marche pas*/
-//     }
-// }
+//      footer span {
+//          display: flex;
+//          justify-content: center;
+//      }
+
+//      footer ul {                                       /* marche pas*/
+//          display: flex;
+//          justify-content: space-between;
+//          align-items: center;
+//      }
+
+//      footer li {
+//          width: 196px;                      /* marche pas*/
+//      }
+    }

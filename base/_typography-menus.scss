@@ -3,35 +3,13 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-.logoohmyfood, .logoohmyfood_footer, h1 {
+h1 {
     font-family: 'Shrikhand', cursive;
 }
 /*end of text font definition*/
 
-
-.logoohmyfood {
-    font-size: 1.8rem;
-}
-
-.logoohmyfood_footer {
-    font-size: 1.1rem;
-}
-
-.fork {
-    font-size: .8rem;
-}
-
-.hands {
-    font-size: .8rem;
-}
-
 h1 {
     font-size: 1.8rem;
-}
-
-.heart {
-    font-size: 1.5rem;
-    font-weight: 100;             /*pourquoi ca marche pas???*/
 }
 
 h2 {     
@@ -53,9 +31,4 @@ h3 {
 
 .add_to_cart {
     font-size: 1.3rem;
-}
-
-button {
-    font-size: 1rem;
-    font-weight: 500;
 }

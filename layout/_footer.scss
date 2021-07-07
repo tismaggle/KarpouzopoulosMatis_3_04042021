@@ -1,52 +1,28 @@
-/*display*/
 footer {
     padding: 1.2rem 0rem 2.5rem 1.2rem;
+    background-color: $footer-color;
 }
 
 .logoohmyfood_footer {
     display: block;
     margin-bottom: .5rem;
+    font-family: 'Shrikhand', cursive;
+    font-size: 1.1rem;
+    color: $footer-sec-color;
 }
 
 footer a {
     display: block;         /*pour avoir du margin en x et en y*/
     margin: .3rem;
+    color: $footer-sec-color;
 }
 
 .fork {
     margin-right: 1rem;
+    font-size: .8rem;
 }
 
 .hands {
     margin-right: .7rem;
-}
-
-/*font and size*/
-.logoohmyfood, .logoohmyfood_footer {
-    font-family: 'Shrikhand', cursive;
-}
-
-.logoohmyfood_footer {
-    font-size: 1.1rem;
-}
-
-.fork {
     font-size: .8rem;
-}
-
-.hands {
-    font-size: .8rem;
-}
-
-/*colors*/
-footer {
-    background-color: $footer-color;
-}
-
-.logoohmyfood_footer {
-    color: $footer-sec-color;
-}
-
-footer a {
-    color: $footer-sec-color;
 }
