@@ -28,54 +28,15 @@ h1 {
     text-align: center;
 }
 
-h3 {
-    margin-bottom: 2rem;
-    text-align: center;
-}
-
-.fonctionnement {
-    padding-bottom: 3.2rem;
-}
-
 h2 {
     padding-left: 1.2rem;
     padding-top: 3rem;
     margin-bottom: 1.8rem;
 }
 
-.steps_card {
-    box-shadow: 0rem .5rem 1rem #eaeaea;           
-    border-radius: 20px;
-    margin: 0rem 1.2rem 1.6rem 2rem;
-    padding: 1rem;
-    display: flex;
-    align-items: baseline;
-    justify-content: flex-start;
-}
-
-.steps_number {
-    display: flex;
-    justify-content: center;
-    margin-left: -1.7rem;
-    align-items: center;
-    width: 1.4rem;
-    height: 1.4rem;
-    border-radius: 50px;
-}
-
-.steps {
-    display: flex;
-    align-items: baseline;
-    padding-left: 1rem;
-}
-
-.steps i {
-    min-width: 20px;
-}
-
-.steps p {
-    padding: 0rem 1rem;
-    margin: 10px;
+h3 {
+    margin-bottom: 2rem;
+    text-align: center;
 }
 
 .restaurants_list {
@@ -88,6 +49,7 @@ h2 {
     box-shadow: 0rem .5rem 1rem #eaeaea;
     margin: 20px;
     position: relative;
+    display: block;
 }
 
 .restaurants_img {

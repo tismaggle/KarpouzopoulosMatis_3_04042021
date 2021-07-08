@@ -292,17 +292,22 @@ h3 {
   transition-delay: .2s;
 }
 
-.fa-heart {
+.coeurs {
+  position: relative;
+}
+
+.coeurs > .fa-heart {
   font-size: 1.5rem;
 }
 
-.shape_hrt {
+.coeurs > .shape_hrt {
   opacity: 1;
   cursor: pointer;
 }
 
-.coeurs {
-  position: relative;
+.coeurs > .home_heart {
+  padding: 10px 0px;
+  margin-right: 1rem;
 }
 
 .full_hrt {
@@ -323,19 +328,13 @@ h3 {
 
 .full_hrt::before {
   content: "";
-  transition: all 2s ease;
+  transition: all 2s ease-out;
 }
 
 .full_hrt:hover::before {
   background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-
-/*page accueil*/
-.home_heart {
-  padding: 10px 0px;
-  margin-right: 1rem;
 }
 
 button {
@@ -345,7 +344,7 @@ button {
   background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   border-radius: 50px;
   border: transparent;
-  box-shadow: 0rem .5rem 1rem #eaeaea;
+  box-shadow: 0px 7px 10px #b4b4b4;
   max-height: 50px;
   margin: auto;
   padding: 1rem;

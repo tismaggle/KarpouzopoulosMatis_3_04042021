@@ -32,7 +32,7 @@
     h2 {
         padding-left: 2.5rem;
     }
-
+ 
     .restaurants_list {
         display: grid;
         grid-template-columns: auto auto;
@@ -40,7 +40,7 @@
         margin: auto;
         max-width: 1150px;
         padding: 0px 40px 80px 40px;
-        gap: 30px;
+        gap: 40px;
     }
 
     .restaurants_card {
@@ -49,7 +49,10 @@
     }
 
     footer {
-        padding-left: 5rem;
+        padding: 0px;
+    }
+    .footer_content {
+        padding: 1rem 0rem 0rem 3rem;
     }
 }
 
