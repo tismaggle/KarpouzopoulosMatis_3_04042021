@@ -173,6 +173,43 @@ footer a {
   font-size: .8rem;
 }
 
+@media (min-width: 800px) {
+  img {
+    max-height: 400px;
+  }
+  .carte {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 30px;
+    padding: 0px 25px;
+  }
+  h3 {
+    text-overflow: ellipsis;
+    /*marche pas*/
+  }
+  .entrees, .plats, .desserts {
+    flex: .33;
+  }
+}
+
+@media (min-width: 432px) {
+  .global {
+    max-width: 400px;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  main {
+    margin: 0px 20px;
+  }
+  .menu {
+    gap: 20px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+  }
+}
+
 /*text font definition*/
 body {
   font-family: 'Roboto', sans-serif;
@@ -255,13 +292,8 @@ h3 {
   transition-delay: .2s;
 }
 
-.heart {
+.fa-heart {
   font-size: 1.5rem;
-}
-
-.home_heart {
-  padding: 10px 0px;
-  margin-right: 1rem;
 }
 
 .shape_hrt {
@@ -269,12 +301,15 @@ h3 {
   cursor: pointer;
 }
 
+.coeurs {
+  position: relative;
+}
+
 .full_hrt {
   transform: scale(1);
   cursor: pointer;
   color: transparent;
   position: absolute;
-  right: 35px;
 }
 
 .full_hrt:hover + .shape_hrt {
@@ -288,14 +323,19 @@ h3 {
 
 .full_hrt::before {
   content: "";
-  transition: background-color 2s ease;
+  transition: all 2s ease;
 }
 
 .full_hrt:hover::before {
-  font-weight: bold;
   background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+/*page accueil*/
+.home_heart {
+  padding: 10px 0px;
+  margin-right: 1rem;
 }
 
 button {

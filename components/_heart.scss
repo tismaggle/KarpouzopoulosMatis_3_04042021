@@ -38,13 +38,8 @@
 //     }
 // }
 
-.heart {
+.fa-heart {
     font-size: 1.5rem;
-}
-
-.home_heart {
-    padding: 10px 0px;
-    margin-right: 1rem;
 }
 
 .shape_hrt {
@@ -52,12 +47,15 @@
     cursor: pointer;
 }
 
+.coeurs {
+    position: relative;
+}
+
 .full_hrt {
     transform: scale(1);
     cursor: pointer;
     color: transparent;
     position: absolute;
-    right: 35px;
 
     &:hover + .shape_hrt {
         opacity: 0;
@@ -70,13 +68,20 @@
 
     &::before {
         content: "";
-        transition: background-color 2s ease;
+        transition: all 2s ease;
     }
 
     &:hover::before {
-        font-weight: bold;
+        // content: "";
+        // font-weight: bold;
         background: -webkit-gradient(linear, left top, left bottom, from($secondary-color), to($primary-color));
 	    -webkit-background-clip: text;
 	    -webkit-text-fill-color: transparent;
     }
+}
+
+/*page accueil*/
+.home_heart {
+    padding: 10px 0px;
+    margin-right: 1rem;
 }

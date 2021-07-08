@@ -1,13 +1,46 @@
-// @media (min-width: 890px)
-// {
-//   .menu {
-//     display: flex;
-//     flex-direction: row;
-//     justify-content: space-around;
-//   }
+@media (min-width: 800px) {
 
-//   .dish_card {
-//     width: 270px;
-//     margin: 0px;
-//   }
-// }
+    img {
+        max-height: 400px;
+    }
+
+    .carte {
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: auto;
+        gap: 30px;
+        padding: 0px 25px;
+    }
+    
+    h3 {
+        text-overflow: ellipsis;            /*marche pas*/
+    }
+
+    .entrees, .plats, .desserts {
+        flex: .33;
+    }
+
+    // .dish_card {
+    //     width: 270px;
+    //     margin: 0px;
+    // }
+}
+
+@media (min-width: 432px) {
+    .global {
+        max-width: 400px;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+    main {
+        margin: 0px 20px;
+    }
+
+    .menu {
+        gap: 20px;
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+    }
+}

@@ -87,6 +87,7 @@ h2 {
     height: 250px;
     box-shadow: 0rem .5rem 1rem #eaeaea;
     margin: 20px;
+    position: relative;
 }
 
 .restaurants_img {
@@ -101,9 +102,9 @@ h2 {
 }
 
 .new {
-    position: sticky;
-    top: 100rem;
-    left: 1000rem;
+    position: absolute;
+    top: .7rem;
+    right: .7rem;
 }
 
 .new span {
