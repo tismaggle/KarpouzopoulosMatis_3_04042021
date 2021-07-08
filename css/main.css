@@ -219,6 +219,9 @@ h3 {
     justify-content: start;
     padding-left: 1rem;
   }
+  .presentation {
+    padding: 40px 20px;
+  }
   .subtitle_button {
     display: flex;
     width: 100%;
@@ -242,12 +245,18 @@ h3 {
   .restaurants_list {
     display: grid;
     grid-template-columns: auto auto;
-    grid-template-rows: 300px 300px 300px 300px;
-    margin: 40px;
+    grid-template-rows: 250px 250px;
+    margin: auto;
+    max-width: 1150px;
+    padding: 0px 40px 80px 40px;
+    gap: 30px;
   }
   .restaurants_card {
-    margin: 15px 0px;
-    min-width: 390px;
+    margin: 0px;
+    min-width: 295px;
+  }
+  footer {
+    padding-left: 5rem;
   }
 }
 
