@@ -25,31 +25,32 @@ button {
 }
 
 /* bouton de la page accueil */
-.btn /* balise parent */ {
+.btn {
     display: flex;
     justify-content: center;
     max-height: 50px;
-}
 
-.action {
-    font-size: 1rem;
-    font-weight: 500;
-
-    > p {
-    padding: 0px 15px;
+    > .action {
+        font-size: 1rem;
+        font-weight: 500;
+    
+        > p {
+        padding: 0px 15px;
+        }
     }
 }
 
 /* boutons des pages menus*/ 
-.btn_link /* balise parent */ {
+.btn_link {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
 
-.commander {
-    margin: 2rem 0px 5rem 0px;
-    > p {
-        padding: 0px 40px;
+    > .commander {
+        margin: 2rem 0px 5rem 0px;
+
+        > p {
+            padding: 0px 40px;
+        }
     }
 }

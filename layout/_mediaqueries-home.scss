@@ -1,4 +1,4 @@
- @media (min-width: 700px) {
+ @media all and (min-width: 700px) {
      
     .logoohmyfood, .localisation {
         justify-content: start;
@@ -7,30 +7,31 @@
     
     .presentation {
         padding: 40px 20px;
-    }
-    .subtitle_button {
-        display: flex;
-        width: 100%;
-        justify-content: space-around;
-        flex-direction: row;
-        margin-top: 2rem;
+
+        .subtitle_button {
+            display: flex;
+            width: 100%;
+            justify-content: space-around;
+            flex-direction: row;
+            margin-top: 2rem;
+
+            .action {
+                min-width: 230px;
+            }
+        }
     }
 
-    .action {
-        min-width: 230px;
-    }
-
-    .functionning_steps {
-        width: 600px;
-        margin: auto;
-    }
-    
-    .steps_card {
-        width: 550px;
-    }
-
-    h2 {
+    .fonctionnement_title {
         padding-left: 2.5rem;
+
+        > .functionning_steps {
+            width: 600px;
+            margin: auto;
+        
+            > .steps_card {
+                width: 550px;
+            }
+        }
     }
  
     .restaurants_list {
@@ -41,34 +42,18 @@
         max-width: 1150px;
         padding: 0px 40px 80px 40px;
         gap: 40px;
-    }
 
-    .restaurants_card {
-        margin: 0px;
-        min-width: 295px;
+        > .restaurants_card {
+            margin: 0px;
+            min-width: 295px;
+        }
     }
 
     footer {
         padding: 0px;
-    }
-    .footer_content {
-        padding: 1rem 0rem 0rem 3rem;
+
+        > .footer_content {
+            padding: 1rem 0rem 0rem 3rem;
+        }
     }
 }
-
-
-//      footer span {
-//          display: flex;
-//          justify-content: center;
-//      }
-
-//      footer ul {                                       /* marche pas*/
-//          display: flex;
-//          justify-content: space-between;
-//          align-items: center;
-//      }
-
-//      footer li {
-//          width: 196px;                      /* marche pas*/
-//      }
-    

@@ -1,4 +1,295 @@
 /*colors*/
+header {
+  height: 62px;
+}
+
+header .arrow {
+  position: absolute;
+  top: 1.5rem;
+  left: 1.5rem;
+  font-size: 1.25rem;
+}
+
+header > .logoohmyfood {
+  font-size: 1.8rem;
+  display: flex;
+  justify-content: center;
+  padding-top: 1rem;
+  font-family: 'Shrikhand', cursive;
+  font-size: 1.8rem;
+}
+
+footer {
+  padding: 1.2rem 0rem 2.5rem 1.2rem;
+  background-color: #353535;
+}
+
+footer .logoohmyfood_footer {
+  display: block;
+  margin-bottom: .5rem;
+  font-family: 'Shrikhand', cursive;
+  font-size: 1.1rem;
+  color: white;
+}
+
+footer a {
+  display: block;
+  /*pour avoir du margin en x et en y*/
+  margin: .3rem;
+  color: white;
+}
+
+footer a > .fork {
+  margin-right: 1rem;
+  font-size: .8rem;
+}
+
+footer a > .hands {
+  margin-right: .7rem;
+  font-size: .8rem;
+}
+
+.localisation {
+  height: 50px;
+  box-shadow: 0px 2px 4px #CCC inset;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eaeaea;
+}
+
+.localisation > p {
+  display: flex;
+  justify-content: center;
+  padding: 0rem 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #353535;
+}
+
+.localisation > .pin {
+  font-size: 1rem;
+  color: #353535;
+}
+
+.presentation {
+  background-color: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2.5rem;
+  padding-bottom: 3.5rem;
+}
+
+.presentation .presentation_title {
+  padding-bottom: 1rem;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.presentation .presentation_sub {
+  color: #353535;
+  font-size: 1.1rem;
+  font-weight: 300;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.fonctionnement {
+  padding-bottom: 3.2rem;
+}
+
+.fonctionnement > .fonctionnement_title {
+  padding-left: 1.2rem;
+  padding-top: 3rem;
+  margin-bottom: 1.8rem;
+  font-size: 1.5rem;
+}
+
+.fonctionnement .steps_card {
+  cursor: pointer;
+  background-color: #f6f6f6;
+  box-shadow: 0rem .5rem 1rem #eaeaea;
+  border-radius: 20px;
+  margin: 0rem 1.2rem 1.6rem 2rem;
+  padding: 1rem;
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-start;
+}
+
+.fonctionnement .steps_card > .steps {
+  display: flex;
+  align-items: baseline;
+  padding-left: 1rem;
+}
+
+.fonctionnement .steps_card > .steps > .steps_icons {
+  color: grey;
+  min-width: 20px;
+  font-size: 1rem;
+}
+
+.fonctionnement .steps_card > .steps > .phone {
+  font-size: 1.25rem;
+}
+
+.fonctionnement .steps_card > .steps > p {
+  padding: 0rem 1rem;
+  margin: 10px;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.fonctionnement .steps_card > .steps_number {
+  color: white;
+  background-color: #9356DC;
+  display: flex;
+  justify-content: center;
+  margin-left: -1.7rem;
+  align-items: center;
+  width: 1.4rem;
+  font-size: .8rem;
+  height: 1.4rem;
+  border-radius: 50px;
+}
+
+.fonctionnement .steps_card:hover .steps_icons {
+  background-color: #9356DC;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.fonctionnement .steps_card:hover {
+  background-color: #eeeeee;
+}
+
+.restaurants {
+  background-color: #f6f6f6;
+}
+
+.restaurants > .restaurants_title {
+  padding-left: 1.2rem;
+  padding-top: 3rem;
+  margin-bottom: 1.8rem;
+  font-size: 1.5rem;
+}
+
+.restaurants > .restaurants_list {
+  padding-bottom: 3.5rem;
+  background-color: #f6f6f6;
+}
+
+.restaurants > .restaurants_list > .restaurants_card {
+  border-radius: 15px;
+  height: 250px;
+  box-shadow: 0rem .5rem 1rem #eaeaea;
+  margin: 20px;
+  position: relative;
+  display: block;
+  background-color: white;
+}
+
+.restaurants > .restaurants_list > .restaurants_card > .new {
+  position: absolute;
+  top: .7rem;
+  right: .7rem;
+}
+
+.restaurants > .restaurants_list > .restaurants_card > .new > span {
+  background-color: #99e2d0;
+  color: #1b6150;
+  font-weight: 600;
+  font-size: .9em;
+  border-radius: 2.5px;
+  width: 75px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.restaurants > .restaurants_list > .restaurants_card > .restaurants_img {
+  height: 175px;
+  width: 100%;
+  background-position-y: 100%;
+  background-size: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  object-fit: cover;
+  object-position: 70% 70%;
+  /* a modifier */
+}
+
+.restaurants > .restaurants_list > .restaurants_card > .restau_info {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.restaurants > .restaurants_list > .restaurants_card > .restau_info > .name_place > .name {
+  font-weight: 600;
+  font-size: 1.15rem;
+}
+
+.restaurants > .restaurants_list > .restaurants_card > .restau_info > .name_place > .place {
+  font-size: 1.15rem;
+}
+
+@media all and (min-width: 700px) {
+  .logoohmyfood, .localisation {
+    justify-content: start;
+    padding-left: 1rem;
+  }
+  .presentation {
+    padding: 40px 20px;
+  }
+  .presentation .subtitle_button {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    flex-direction: row;
+    margin-top: 2rem;
+  }
+  .presentation .subtitle_button .action {
+    min-width: 230px;
+  }
+  .fonctionnement_title {
+    padding-left: 2.5rem;
+  }
+  .fonctionnement_title > .functionning_steps {
+    width: 600px;
+    margin: auto;
+  }
+  .fonctionnement_title > .functionning_steps > .steps_card {
+    width: 550px;
+  }
+  .restaurants_list {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 250px 250px;
+    margin: auto;
+    max-width: 1150px;
+    padding: 0px 40px 80px 40px;
+    gap: 40px;
+  }
+  .restaurants_list > .restaurants_card {
+    margin: 0px;
+    min-width: 295px;
+  }
+  footer {
+    padding: 0px;
+  }
+  footer > .footer_content {
+    padding: 1rem 0rem 0rem 3rem;
+  }
+}
+
+/*text font definition*/
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -10,10 +301,6 @@ html, body, ul, li, h1, h2, h3, h4, h5, p, img {
 
 body {
   font-size: 16px;
-}
-
-h1, h2, h3, h4, h5 p, a {
-  font-size: 1rem;
 }
 
 img {
@@ -32,235 +319,6 @@ ul {
 body, html {
   min-width: 375px;
   margin: auto;
-}
-
-/*main*/
-.localisation {
-  height: 50px;
-  box-shadow: 0px 2px 4px #CCC inset;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.localisation p {
-  display: flex;
-  justify-content: center;
-  padding: 0rem 1rem;
-}
-
-.presentation {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 2.5rem;
-  padding-bottom: 3.5rem;
-}
-
-h1 {
-  padding-bottom: 1rem;
-  text-align: center;
-}
-
-h2 {
-  padding-left: 1.2rem;
-  padding-top: 3rem;
-  margin-bottom: 1.8rem;
-}
-
-h3 {
-  margin-bottom: 2rem;
-  text-align: center;
-}
-
-.restaurants_list {
-  padding-bottom: 3.5rem;
-}
-
-.restaurants_card {
-  border-radius: 15px;
-  height: 250px;
-  box-shadow: 0rem .5rem 1rem #eaeaea;
-  margin: 20px;
-  position: relative;
-  display: block;
-}
-
-.restaurants_img {
-  height: 175px;
-  width: 100%;
-  background-position-y: 100%;
-  background-size: cover;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-  object-fit: cover;
-  object-position: 70% 70%;
-  /* a modifier */
-}
-
-.new {
-  position: absolute;
-  top: .7rem;
-  right: .7rem;
-}
-
-.new span {
-  border-radius: 2.5px;
-  width: 75px;
-  height: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.restau_info {
-  display: flex;
-  justify-content: space-between;
-  padding: 15px;
-}
-
-#choosebox {
-  display: none;
-}
-
-.localisation {
-  background-color: #eaeaea;
-}
-
-.pin {
-  color: #353535;
-}
-
-.localisation p {
-  color: #353535;
-}
-
-.presentation {
-  background-color: #f6f6f6;
-}
-
-h3 {
-  color: #353535;
-}
-
-.restaurants, .restaurants_list {
-  background-color: #f6f6f6;
-}
-
-.restaurants_card {
-  background-color: white;
-}
-
-.new span {
-  background-color: #99e2d0;
-  color: #1b6150;
-}
-
-@media (min-width: 700px) {
-  .logoohmyfood, .localisation {
-    justify-content: start;
-    padding-left: 1rem;
-  }
-  .presentation {
-    padding: 40px 20px;
-  }
-  .subtitle_button {
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
-    flex-direction: row;
-    margin-top: 2rem;
-  }
-  .action {
-    min-width: 230px;
-  }
-  .functionning_steps {
-    width: 600px;
-    margin: auto;
-  }
-  .steps_card {
-    width: 550px;
-  }
-  h2 {
-    padding-left: 2.5rem;
-  }
-  .restaurants_list {
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: 250px 250px;
-    margin: auto;
-    max-width: 1150px;
-    padding: 0px 40px 80px 40px;
-    gap: 40px;
-  }
-  .restaurants_card {
-    margin: 0px;
-    min-width: 295px;
-  }
-  footer {
-    padding: 0px;
-  }
-  .footer_content {
-    padding: 1rem 0rem 0rem 3rem;
-  }
-}
-
-/*text font*/
-body {
-  font-family: 'Roboto', sans-serif;
-}
-
-.pin {
-  font-size: 1rem;
-}
-
-.localisation p {
-  font-size: 1rem;
-  font-weight: 500;
-}
-
-h1 {
-  font-size: 1.5rem;
-}
-
-h2 {
-  font-size: 1.5rem;
-}
-
-h3 {
-  font-size: 1.1rem;
-  font-weight: 300;
-}
-
-.steps_number {
-  font-size: .8rem;
-}
-
-.steps p {
-  font-size: 1rem;
-  font-weight: 500;
-}
-
-.phone, .list, .shop {
-  font-size: 1rem;
-}
-
-i.phone {
-  font-size: 1.25rem;
-}
-
-.new span {
-  font-weight: 600;
-  font-size: .9em;
-}
-
-.name {
-  font-weight: 600;
-  font-size: 1.15rem;
-}
-
-.place {
-  font-size: 1.15rem;
 }
 
 .coeurs {
@@ -299,7 +357,7 @@ i.phone {
 
 .full_hrt::before {
   content: "";
-  transition: all 2s ease-out;
+  transition: all 1s ease-in-out;
 }
 
 .full_hrt:hover::before {
@@ -341,12 +399,12 @@ button > p {
   max-height: 50px;
 }
 
-.action {
+.btn > .action {
   font-size: 1rem;
   font-weight: 500;
 }
 
-.action > p {
+.btn > .action > p {
   padding: 0px 15px;
 }
 
@@ -357,116 +415,11 @@ button > p {
   align-items: center;
 }
 
-.commander {
+.btn_link > .commander {
   margin: 2rem 0px 5rem 0px;
 }
 
-.commander > p {
+.btn_link > .commander > p {
   padding: 0px 40px;
-}
-
-.fonctionnement {
-  padding-bottom: 3.2rem;
-}
-
-.fonctionnement .steps_card {
-  cursor: pointer;
-  background-color: #f6f6f6;
-  box-shadow: 0rem .5rem 1rem #eaeaea;
-  border-radius: 20px;
-  margin: 0rem 1.2rem 1.6rem 2rem;
-  padding: 1rem;
-  display: flex;
-  align-items: baseline;
-  justify-content: flex-start;
-}
-
-.fonctionnement .steps_card > .steps {
-  display: flex;
-  align-items: baseline;
-  padding-left: 1rem;
-}
-
-.fonctionnement .steps_card > .steps > .steps_icons {
-  color: grey;
-  min-width: 20px;
-}
-
-.fonctionnement .steps_card > .steps > p {
-  padding: 0rem 1rem;
-  margin: 10px;
-}
-
-.fonctionnement .steps_card > .steps_number {
-  color: white;
-  background-color: #9356DC;
-  display: flex;
-  justify-content: center;
-  margin-left: -1.7rem;
-  align-items: center;
-  width: 1.4rem;
-  height: 1.4rem;
-  border-radius: 50px;
-}
-
-.fonctionnement .steps_card:hover .steps_icons {
-  background-color: #9356DC;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.fonctionnement .steps_card:hover {
-  background-color: #eeeeee;
-}
-
-footer {
-  padding: 1.2rem 0rem 2.5rem 1.2rem;
-  background-color: #353535;
-}
-
-.logoohmyfood_footer {
-  display: block;
-  margin-bottom: .5rem;
-  font-family: 'Shrikhand', cursive;
-  font-size: 1.1rem;
-  color: white;
-}
-
-footer a {
-  display: block;
-  /*pour avoir du margin en x et en y*/
-  margin: .3rem;
-  color: white;
-}
-
-.fork {
-  margin-right: 1rem;
-  font-size: .8rem;
-}
-
-.hands {
-  margin-right: .7rem;
-  font-size: .8rem;
-}
-
-.logoohmyfood {
-  font-size: 1.8rem;
-  display: flex;
-  justify-content: center;
-  padding-top: 1rem;
-  font-family: 'Shrikhand', cursive;
-  font-size: 1.8rem;
-}
-
-header {
-  height: 62px;
-}
-
-/*header des pages menus*/
-.arrow {
-  position: absolute;
-  top: 1.5rem;
-  left: 1.5rem;
-  font-size: 1.25rem;
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,22 @@
+.presentation {
+    background-color: $master-background-color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2.5rem;
+    padding-bottom: 3.5rem;
+    
+    .presentation_title {
+        padding-bottom: 1rem;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    .presentation_sub {
+        color: $text-color;
+        font-size: 1.1rem;
+        font-weight: 300;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+}

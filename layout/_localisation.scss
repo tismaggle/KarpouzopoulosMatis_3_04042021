@@ -1,0 +1,22 @@
+.localisation {
+    height: 50px;
+    box-shadow: 0px 2px 4px #CCC inset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $localisation-color;
+
+    > p {
+        display: flex;
+        justify-content: center;
+        padding: 0rem 1rem;
+        font-size: 1rem;
+        font-weight: 500;
+        color: $text-color;
+    }
+    
+    > .pin {
+        font-size: 1rem;
+        color: $text-color;
+    }
+}

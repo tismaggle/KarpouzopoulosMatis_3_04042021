@@ -1,20 +1,20 @@
-.logoohmyfood {
-    font-size: 1.8rem;
-    display: flex;
-    justify-content: center;
-    padding-top: 1rem;
-    font-family: 'Shrikhand', cursive;
-    font-size: 1.8rem;
-}
-
 header {
     height: 62px;
-}
 
-/*header des pages menus*/
-.arrow {
-    position: absolute;
-    top: 1.5rem;
-    left: 1.5rem;
-    font-size: 1.25rem;
-  }
+    
+    .arrow /*pour pages menus*/ {
+        position: absolute;
+        top: 1.5rem;
+        left: 1.5rem;
+        font-size: 1.25rem;
+    }
+
+    > .logoohmyfood {
+        font-size: 1.8rem;
+        display: flex;
+        justify-content: center;
+        padding-top: 1rem;
+        font-family: 'Shrikhand', cursive;
+        font-size: 1.8rem;
+    }
+}

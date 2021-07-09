@@ -1,0 +1,72 @@
+.restaurants {
+    background-color: $master-background-color;
+
+    > .restaurants_title {
+        padding-left: 1.2rem;
+        padding-top: 3rem;
+        margin-bottom: 1.8rem;
+        font-size: 1.5rem;
+    }
+
+    > .restaurants_list {
+        padding-bottom: 3.5rem;
+        background-color: $master-background-color;
+
+        > .restaurants_card {
+            border-radius: 15px;
+            height: 250px;
+            box-shadow: 0rem .5rem 1rem #eaeaea;
+            margin: 20px;
+            position: relative;
+            display: block;
+            background-color: white;
+
+            > .new {
+                position: absolute;
+                top: .7rem;
+                right: .7rem;
+
+                > span {
+                    background-color: #99e2d0;
+                    color: #1b6150;
+                    font-weight: 600;
+                    font-size: .9em;
+                    border-radius: 2.5px;
+                    width: 75px;
+                    height: 30px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+
+            > .restaurants_img {
+                height: 175px;
+                width: 100%;
+                background-position-y: 100%;
+                background-size: cover;
+                border-top-left-radius: 15px;
+                border-top-right-radius: 15px;
+                object-fit: cover;
+                object-position: 70% 70%;       /* a modifier */
+            }
+
+            > .restau_info {
+                display: flex;
+                justify-content: space-between;
+                padding: 15px;
+
+                > .name_place {
+                    > .name {
+                        font-weight: 600;
+                        font-size: 1.15rem;
+                    }
+                    
+                    > .place {
+                        font-size: 1.15rem;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,11 @@
+.enseigne {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2rem;  
+    margin: -1rem 1.2rem 0px 1.2rem;
+
+    > h1 {
+        font-family: 'Shrikhand', cursive;
+        font-size: 1.8rem;
+    }
+}

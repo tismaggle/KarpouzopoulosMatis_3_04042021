@@ -25,6 +25,14 @@
         display: flex;
         align-items: center;
         justify-content: center;
+
+        > .add_to_cart {
+            color: white;
+            width: 20px;
+            font-size: 1.3rem;
+            transition: transform .4s ease-in-out;
+            transition-delay: .2s;
+        }
     }
     
     &:hover {
@@ -38,9 +46,4 @@
             transform: rotate(360deg);
         }
     }
-}
-
-.add_to_cart {
-    transition: transform .4s ease-in-out;
-    transition-delay: .2s;
 }
