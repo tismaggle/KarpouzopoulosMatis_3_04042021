@@ -23,37 +23,36 @@
 
     .fonctionnement_title {
         padding-left: 2.5rem;
+    }
 
-        > .functionning_steps {
-            width: 600px;
-            margin: auto;
-        
-            > .steps_card {
-                width: 550px;
-            }
-        }
+    .functionning_steps {
+        width: 600px;
+        margin: auto;
+    }
+
+    .steps_card {
+        width: 550px;
+    }
+
+    .fonctionnement_title, .restaurants_title {
+        margin-left: 2rem;
     }
  
     .restaurants_list {
-        display: grid;
         grid-template-columns: auto auto;
         grid-template-rows: 250px 250px;
         margin: auto;
         max-width: 1150px;
         padding: 0px 40px 80px 40px;
-        gap: 40px;
+        gap: 40px;              /*marche pas*/
 
         > .restaurants_card {
             margin: 0px;
             min-width: 295px;
         }
     }
-
-    footer {
-        padding: 0px;
-
-        > .footer_content {
-            padding: 1rem 0rem 0rem 3rem;
-        }
+        
+    .footer_content {
+        padding: 1rem 0rem 0rem 3rem;
     }
 }

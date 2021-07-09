@@ -1,13 +1,16 @@
 .global {
-    animation: fadein_riseup 2.5s ease-in;
+    animation: fadein_riseup $anim-dur cubic-bezier(.31,0,1,.5) both;
+    @for $i from 1 through $num-bars {
+        &--#{$i} {
+            animation-delay: $anim-delay * $i;
+         }
+    }
 
     @keyframes fadein_riseup {
         from {
-            opacity:0;
-            margin-top: 5%;
+            margin-top: 7%;
         }
         to {
-            opacity: 1;
             margin-top: 0%;
         }
     }
@@ -44,6 +47,19 @@
         }
         & .add_to_cart {
             transform: rotate(360deg);
+        }
+    }
+}
+
+.menu {
+    animation: opacity 1500ms ease-in;
+
+    @keyframes opacity {
+        from {
+            opacity:0;
+        }
+        to {
+            opacity: 1;
         }
     }
 }

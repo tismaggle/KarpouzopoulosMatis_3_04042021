@@ -1,6 +1,7 @@
-h2 {     
-    font-weight: 200;   
+.carte h2 {     
+    font-weight: 200; 
     margin: 2.5rem 0px 1rem 1.2rem;
+    font-size: 1rem;
 
     &::after {
         content: "";

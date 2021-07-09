@@ -9,14 +9,15 @@
     }
 
     > .restaurants_list {
-        padding-bottom: 3.5rem;
+        display: grid;
+        padding: 0px 20px 3.5rem 20px;
         background-color: $master-background-color;
+        gap: 20px;
 
         > .restaurants_card {
             border-radius: 15px;
             height: 250px;
             box-shadow: 0rem .5rem 1rem #eaeaea;
-            margin: 20px;
             position: relative;
             display: block;
             background-color: white;
