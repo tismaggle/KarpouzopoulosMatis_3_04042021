@@ -38,9 +38,59 @@
     }
 
     &:hover::before {
-        // content: "";
+        content: "";
         background: -webkit-gradient(linear, left top, left bottom, from($secondary-color), to($primary-color));
 	    -webkit-background-clip: text;
 	    -webkit-text-fill-color: transparent;
     }
 }
+
+// .coeurs {
+//     position: relative;
+
+//     > .fa-heart {
+//         font-size: 1.5rem;
+//     }
+
+//     > .full_hrt {
+//         transform: scale(1);
+//         cursor: pointer;
+//         color: transparent;
+//         position: absolute;
+//         transition: transform 2s ease-in-out;
+//     }
+
+//     > .shape_hrt {
+//         opacity: 1;
+//         cursor: pointer;
+//     }
+
+//     >.home_heart /*page accueil*/ {
+//         padding: 10px 0px;
+//         margin-right: 1rem;
+//     }
+// }
+
+// .fa-heart {
+
+//     &:hover + .shape_hrt {
+//         opacity: 0;
+//     }
+
+//     &:hover {
+//         transform: scale(1.3);
+//         opacity: 1;
+//     }
+
+//     &::before {
+//         content: "";
+//         transition: all 1s ease-in-out;
+//     }
+
+//     &:hover::before {
+//         content: "";
+//         background: -webkit-gradient(linear, left top, left bottom, from($secondary-color), to($primary-color));
+// 	    -webkit-background-clip: text;
+// 	    -webkit-text-fill-color: transparent;
+//     }
+// }

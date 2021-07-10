@@ -362,6 +362,7 @@ body, html {
 }
 
 .full_hrt:hover::before {
+  content: "";
   background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

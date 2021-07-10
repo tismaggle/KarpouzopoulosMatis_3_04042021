@@ -1,65 +1,30 @@
+.menu {
+    animation: fadein 1500ms ease-in;
+
+    @keyframes fadein {
+        from {
+            opacity:0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+}
+
 .global {
-    animation: fadein_riseup $anim-dur cubic-bezier(.31,0,1,.5) both;
+    animation: riseup $anim-dur cubic-bezier(.31,0,1,.5) both;
     @for $i from 1 through $num-bars {
         &--#{$i} {
             animation-delay: $anim-delay * $i;
          }
     }
 
-    @keyframes fadein_riseup {
+    @keyframes riseup {
         from {
             margin-top: 7%;
         }
         to {
             margin-top: 0%;
-        }
-    }
-
-    &__check {
-        transform-origin: right center;
-        transition: transform .25s cubic-bezier(.17,.67,.83,.67);
-        animation-fill-mode: forwards;
-        transition-delay: .25s;
-        transform: scaleX(0);
-        background-color: $animation_color;
-        border-bottom-right-radius: 15px;
-        border-top-right-radius: 15px;
-        width: 70px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        > .add_to_cart {
-            color: white;
-            width: 20px;
-            font-size: 1.3rem;
-            transition: transform .4s ease-in-out;
-            transition-delay: .2s;
-        }
-    }
-    
-    &:hover {
-        > .global__check {
-            transform: scaleX(1);
-        }
-        > .dish_card span {
-            transform: translateX(-70px);
-        }
-        & .add_to_cart {
-            transform: rotate(360deg);
-        }
-    }
-}
-
-.menu {
-    animation: opacity 1500ms ease-in;
-
-    @keyframes opacity {
-        from {
-            opacity:0;
-        }
-        to {
-            opacity: 1;
         }
     }
 }

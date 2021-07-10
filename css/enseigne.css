@@ -212,8 +212,73 @@ body, html {
   font-size: 1.8rem;
 }
 
+.global__check {
+  transform-origin: right center;
+  transition: transform 0.25s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+  animation-fill-mode: forwards;
+  transition-delay: .25s;
+  background-color: #99E2D0;
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
+  margin-right: -70px;
+  width: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.global__check > .add_to_cart {
+  color: white;
+  width: 20px;
+  font-size: 1.3rem;
+  transition: transform .4s ease-in-out;
+  transition-delay: .2s;
+}
+
+.global:hover > .global__check {
+  transform: translateX(-70px);
+}
+
+.global:hover > .dish_card span {
+  transform: translateX(-70px);
+}
+
+.global:hover .add_to_cart {
+  transform: rotate(360deg);
+}
+
+.menu {
+  position: relative;
+  background-color: #f6f6f6;
+  z-index: 3;
+}
+
 .global {
-  animation: fadein_riseup 600ms cubic-bezier(0.31, 0, 1, 0.5) both;
+  position: relative;
+  z-index: 1;
+}
+
+.global__check {
+  position: relative;
+  z-index: 2;
+}
+
+.menu {
+  animation: fadein 1500ms ease-in;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.global {
+  animation: riseup 600ms cubic-bezier(0.31, 0, 1, 0.5) both;
 }
 
 .global--1 {
@@ -232,60 +297,12 @@ body, html {
   animation-delay: 1200ms;
 }
 
-@keyframes fadein_riseup {
+@keyframes riseup {
   from {
     margin-top: 7%;
   }
   to {
     margin-top: 0%;
-  }
-}
-
-.global__check {
-  transform-origin: right center;
-  transition: transform 0.25s cubic-bezier(0.17, 0.67, 0.83, 0.67);
-  animation-fill-mode: forwards;
-  transition-delay: .25s;
-  transform: scaleX(0);
-  background-color: #99E2D0;
-  border-bottom-right-radius: 15px;
-  border-top-right-radius: 15px;
-  width: 70px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.global__check > .add_to_cart {
-  color: white;
-  width: 20px;
-  font-size: 1.3rem;
-  transition: transform .4s ease-in-out;
-  transition-delay: .2s;
-}
-
-.global:hover > .global__check {
-  transform: scaleX(1);
-}
-
-.global:hover > .dish_card span {
-  transform: translateX(-70px);
-}
-
-.global:hover .add_to_cart {
-  transform: rotate(360deg);
-}
-
-.menu {
-  animation: opacity 1500ms ease-in;
-}
-
-@keyframes opacity {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
   }
 }
 
@@ -329,6 +346,7 @@ body, html {
 }
 
 .full_hrt:hover::before {
+  content: "";
   background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
