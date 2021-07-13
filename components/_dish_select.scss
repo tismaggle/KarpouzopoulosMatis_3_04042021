@@ -48,6 +48,7 @@
         border-bottom-right-radius: 15px;
         border-top-right-radius: 15px;
         margin-right: -70px;
+
         width: 70px;
         display: flex;
         align-items: center;
@@ -66,32 +67,29 @@
         > .global__check {
             transform: translateX(-70px);
         }
-        > .dish_card span {
-            transform: translateX(-70px);
+
+        span {
+            animation: price .25s ease-in;
+            animation-fill-mode: both;
+            transition-delay: .25s;
+        
+            @keyframes price {
+                from {
+                    margin-right: 0px;
+                }
+                to {
+                    margin-right: 60px;
+                }
+            }
         }
+        
         & .add_to_cart {
             transform: rotate(360deg);
         }
     }
 }
 
-.menu {
-    position: relative;
-    background-color: #f6f6f6;
-    z-index: 3;
-}
-
-.global {
-    position: relative;
-    z-index: 1;
-}
-
-.global__check {
-    position: relative;
-    z-index: 2;
-}
-
-.details h3, .details p {
+.details, .details h3, .details p {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
