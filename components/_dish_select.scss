@@ -1,43 +1,11 @@
-// .global {
-
-//     &__check {
-//         transform-origin: right center;
-//         transition: transform .25s cubic-bezier(.17,.67,.83,.67);
-//         animation-fill-mode: forwards;
-//         transition-delay: .25s;
-//         transform: scaleX(0);
-//         background-color: $animation_color;
-//         border-bottom-right-radius: 15px;
-//         border-top-right-radius: 15px;
-//         width: 70px;
-//         display: flex;
-//         align-items: center;
-//         justify-content: center;
-
-//         > .add_to_cart {
-//             color: white;
-//             width: 20px;
-//             font-size: 1.3rem;
-//             transition: transform .4s ease-in-out;
-//             transition-delay: .2s;
-//         }
-//     }
-    
-//     &:hover {
-//         > .global__check {
-//             transform: scaleX(1);
-//         }
-//         > .dish_card span {
-//             transform: translateX(-70px);
-//         }
-//         & .add_to_cart {
-//             transform: rotate(360deg);
-//         }
-//     }
-// }
-
 .global {
     overflow: hidden;
+
+    .details, .details h3, .details p {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
 
     &__check {
         transform-origin: right center;
@@ -87,10 +55,4 @@
             transform: rotate(360deg);
         }
     }
-}
-
-.details, .details h3, .details p {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
 }

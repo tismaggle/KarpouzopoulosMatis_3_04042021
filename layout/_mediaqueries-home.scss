@@ -1,22 +1,35 @@
  @media all and (min-width: 700px) {
      
     .logoohmyfood, .localisation {
-        justify-content: start;
-        padding-left: 1rem;
+        justify-content: center;
+    }
+
+    .line_break {
+        display: none;
     }
     
     .presentation {
         padding: 40px 20px;
 
+        .presentation_title {
+            justify-content: flex-start;
+        }
+
         .subtitle_button {
             display: flex;
             width: 100%;
             justify-content: space-around;
-            flex-direction: row;
+            flex-direction: column;
             margin-top: 2rem;
 
             .action {
                 min-width: 230px;
+                order: 1;
+            }
+        
+            .presentation_sub {
+                order: 2;
+                margin-top: 2rem;
             }
         }
     }
@@ -32,13 +45,17 @@
 
     .steps_card {
         width: 550px;
+
+        .steps {
+            margin-left: 2rem;
+        }
     }
 
     .fonctionnement_title, .restaurants_title {
         margin-left: 2rem;
     }
  
-    .restaurants_list {
+    .restaurants .restaurants_list {
         grid-template-columns: auto auto;
         grid-template-rows: 250px 250px;
         margin: auto;
@@ -51,8 +68,8 @@
             min-width: 295px;
         }
     }
-        
-    .footer_content {
-        padding: 1rem 0rem 0rem 3rem;
+
+    footer {
+        padding: 2.2rem 0rem 2.5rem 4.2rem;
     }
 }

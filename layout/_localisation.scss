@@ -6,13 +6,29 @@
     align-items: center;
     background-color: $localisation-color;
 
-    > p {
+    // > p {
+    //     display: flex;
+    //     justify-content: center;
+    //     padding: 0rem 1rem;
+    //     font-size: 1rem;
+    //     font-weight: 500;
+    //     color: $text-color;
+    // }
+
+    .destination {
         display: flex;
         justify-content: center;
         padding: 0rem 1rem;
-        font-size: 1rem;
-        font-weight: 500;
-        color: $text-color;
+        width: 150px;
+        height: 2rem;
+        background-color: $localisation-color;
+        border: none;
+
+        &::placeholder {
+            font-size: 1rem;
+            font-weight: 700;
+            color: $text-color;
+        }
     }
     
     > .pin {

@@ -94,12 +94,19 @@ footer a > .hands {
   background-color: #eaeaea;
 }
 
-.localisation > p {
+.localisation .destination {
   display: flex;
   justify-content: center;
   padding: 0rem 1rem;
+  width: 150px;
+  height: 2rem;
+  background-color: #eaeaea;
+  border: none;
+}
+
+.localisation .destination::placeholder {
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 700;
   color: #353535;
 }
 
@@ -118,7 +125,7 @@ footer a > .hands {
 }
 
 .presentation .presentation_title {
-  padding-bottom: 1rem;
+  margin-bottom: 1rem;
   text-align: center;
   font-size: 1.5rem;
 }
@@ -365,21 +372,31 @@ button > span {
 
 @media all and (min-width: 700px) {
   .logoohmyfood, .localisation {
-    justify-content: start;
-    padding-left: 1rem;
+    justify-content: center;
+  }
+  .line_break {
+    display: none;
   }
   .presentation {
     padding: 40px 20px;
+  }
+  .presentation .presentation_title {
+    justify-content: flex-start;
   }
   .presentation .subtitle_button {
     display: flex;
     width: 100%;
     justify-content: space-around;
-    flex-direction: row;
+    flex-direction: column;
     margin-top: 2rem;
   }
   .presentation .subtitle_button .action {
     min-width: 230px;
+    order: 1;
+  }
+  .presentation .subtitle_button .presentation_sub {
+    order: 2;
+    margin-top: 2rem;
   }
   .fonctionnement_title {
     padding-left: 2.5rem;
@@ -391,10 +408,13 @@ button > span {
   .steps_card {
     width: 550px;
   }
+  .steps_card .steps {
+    margin-left: 2rem;
+  }
   .fonctionnement_title, .restaurants_title {
     margin-left: 2rem;
   }
-  .restaurants_list {
+  .restaurants .restaurants_list {
     grid-template-columns: auto auto;
     grid-template-rows: 250px 250px;
     margin: auto;
@@ -403,12 +423,12 @@ button > span {
     gap: 40px;
     /*marche pas*/
   }
-  .restaurants_list > .restaurants_card {
+  .restaurants .restaurants_list > .restaurants_card {
     margin: 0px;
     min-width: 295px;
   }
-  .footer_content {
-    padding: 1rem 0rem 0rem 3rem;
+  footer {
+    padding: 2.2rem 0rem 2.5rem 4.2rem;
   }
 }
 /*# sourceMappingURL=main.css.map */

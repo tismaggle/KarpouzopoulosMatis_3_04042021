@@ -170,6 +170,12 @@ footer a > .hands {
   overflow: hidden;
 }
 
+.global .details, .global .details h3, .global .details p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .global__check {
   transform-origin: right center;
   transition: transform 0.25s cubic-bezier(0.17, 0.67, 0.83, 0.67);
@@ -214,12 +220,6 @@ footer a > .hands {
 
 .global:hover .add_to_cart {
   transform: rotate(360deg);
-}
-
-.details, .details h3, .details p {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 .menu {
