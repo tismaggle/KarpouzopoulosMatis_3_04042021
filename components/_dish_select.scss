@@ -37,6 +37,7 @@
 // }
 
 .global {
+    overflow: hidden;
 
     &__check {
         transform-origin: right center;
@@ -51,7 +52,6 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        overflow: hidden;
 
         > .add_to_cart {
             color: white;
@@ -89,4 +89,10 @@
 .global__check {
     position: relative;
     z-index: 2;
+}
+
+.details h3, .details p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }

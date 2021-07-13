@@ -1,96 +1,35 @@
 .coeurs {
     position: relative;
+    width: 20px;
+    height: 20px;
+
+    &:hover {
+        .shape_hrt {
+            opacity: 0;
+        }
+
+        .full_hrt {
+            opacity: 1;
+        }
+    }
 
     > .fa-heart {
         font-size: 1.5rem;
-    }
-
-    > .shape_hrt {
-        opacity: 1;
         cursor: pointer;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: opacity 2s;
     }
 
-    >.home_heart /*page accueil*/ {
-        padding: 10px 0px;
-        margin-right: 1rem;
-    }
-}
-
-.full_hrt {
-    transform: scale(1);
-    cursor: pointer;
-    color: transparent;
-    position: absolute;
-    // transition: transform 2s ease-in-out;
-
-    &:hover + .shape_hrt {
-        opacity: 0;
-    }
-
-    &:hover {
-        transform: scale(1.3);
+    .shape_hrt {
         opacity: 1;
     }
 
-    &::before {
-        content: "";
-        transition: all 1s ease-in-out;
-    }
-
-    &:hover::before {
-        content: "";
+    .full_hrt {
+        opacity: 0;
         background: -webkit-gradient(linear, left top, left bottom, from($secondary-color), to($primary-color));
 	    -webkit-background-clip: text;
 	    -webkit-text-fill-color: transparent;
     }
 }
-
-// .coeurs {
-//     position: relative;
-
-//     > .fa-heart {
-//         font-size: 1.5rem;
-//     }
-
-//     > .full_hrt {
-//         transform: scale(1);
-//         cursor: pointer;
-//         color: transparent;
-//         position: absolute;
-//         transition: transform 2s ease-in-out;
-//     }
-
-//     > .shape_hrt {
-//         opacity: 1;
-//         cursor: pointer;
-//     }
-
-//     >.home_heart /*page accueil*/ {
-//         padding: 10px 0px;
-//         margin-right: 1rem;
-//     }
-// }
-
-// .fa-heart {
-
-//     &:hover + .shape_hrt {
-//         opacity: 0;
-//     }
-
-//     &:hover {
-//         transform: scale(1.3);
-//         opacity: 1;
-//     }
-
-//     &::before {
-//         content: "";
-//         transition: all 1s ease-in-out;
-//     }
-
-//     &:hover::before {
-//         content: "";
-//         background: -webkit-gradient(linear, left top, left bottom, from($secondary-color), to($primary-color));
-// 	    -webkit-background-clip: text;
-// 	    -webkit-text-fill-color: transparent;
-//     }
-// }

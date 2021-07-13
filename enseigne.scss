@@ -1,13 +1,13 @@
+@import "./base/reset";
 @import "./utils/variables";
+@import "./base/typography";
 @import "./layout/menu";
 @import "./layout/header";
 @import "./layout/dishes";
 @import "./layout/footer";
-@import "./layout/mediaqueries-menus";
-@import "./base/typography";
-@import "./base/reset";
 @import "./components/enseigne_title";
 @import "./components/dish_select";
 @import "./components/fadein_riseup";
 @import "./components/heart";
 @import "./components/bouton";
+@import "./layout/mediaqueries-menus";
