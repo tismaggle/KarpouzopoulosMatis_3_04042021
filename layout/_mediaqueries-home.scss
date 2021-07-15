@@ -61,15 +61,11 @@
         margin: auto;
         max-width: 1150px;
         padding: 0px 40px 80px 40px;
-        gap: 40px;              /*marche pas*/
+        gap: 40px;
 
         > .restaurants_card {
             margin: 0px;
             min-width: 295px;
         }
-    }
-
-    footer {
-        padding: 2.2rem 0rem 2.5rem 4.2rem;
     }
 }

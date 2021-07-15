@@ -16,7 +16,6 @@
         border-bottom-right-radius: 15px;
         border-top-right-radius: 15px;
         margin-right: -70px;
-
         width: 70px;
         display: flex;
         align-items: center;
@@ -37,15 +36,14 @@
         }
 
         span {
-            animation: price .25s ease-in;
-            animation-fill-mode: both;
-            transition-delay: .25s;
+            animation: price .25s .25s ease-in;
+            animation-fill-mode: forwards;                  /*marche pas*/
         
             @keyframes price {
-                from {
+                0% {
                     margin-right: 0px;
                 }
-                to {
+                100% {
                     margin-right: 60px;
                 }
             }

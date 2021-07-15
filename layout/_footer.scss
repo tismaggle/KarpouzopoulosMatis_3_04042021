@@ -26,3 +26,10 @@ footer {
         }
     }
 }
+
+@media all and (min-width: 700px) {
+    
+    footer {
+        padding: 2.2rem 0rem 2.5rem 4.2rem;
+    }
+}

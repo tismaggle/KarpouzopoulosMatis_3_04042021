@@ -9,6 +9,7 @@ html, body, ul, li, h1, h2, h3, h4, h5, p, img {
 
 body {
   font-size: 16px;
+  margin: auto;
 }
 
 img {
@@ -83,6 +84,12 @@ footer a > .fork {
 footer a > .hands {
   margin-right: .7rem;
   font-size: .8rem;
+}
+
+@media all and (min-width: 700px) {
+  footer {
+    padding: 2.2rem 0rem 2.5rem 4.2rem;
+  }
 }
 
 .localisation {
@@ -314,6 +321,118 @@ footer a > .hands {
   -webkit-text-fill-color: transparent;
 }
 
+.progress-bar-chargement {
+  height: 4.5px;
+  background: #9356DC;
+  animation-duration: 2s;
+  animation-name: loader;
+  opacity: 0;
+  border-radius: 12px;
+  transition-timing-function: ease-in;
+}
+
+.header-bar-chargement {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: transparent;
+  transition-timing-function: ease-out;
+}
+
+header, main, footer {
+  animation-duration: 2s;
+  animation-name: opacity-body;
+}
+
+@keyframes opacity-body {
+  0% {
+    opacity: 0.1;
+  }
+  25% {
+    opacity: .2;
+  }
+  50% {
+    opacity: .45;
+  }
+  75% {
+    opacity: .6;
+  }
+  95% {
+    opacity: .8;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes loader {
+  1% {
+    width: 0;
+    opacity: 0;
+    display: none;
+  }
+  2% {
+    opacity: 1;
+    display: block;
+  }
+  30% {
+    opacity: 1;
+  }
+  75% {
+    width: 75%;
+  }
+  76% {
+    width: 76%;
+  }
+  77% {
+    width: 77%;
+  }
+  78% {
+    width: 78%;
+  }
+  79% {
+    width: 79%;
+  }
+  80% {
+    width: 80%;
+  }
+  81% {
+    width: 81%;
+  }
+  83% {
+    width: 82%;
+  }
+  82% {
+    width: 83%;
+  }
+  84% {
+    width: 84%;
+  }
+  85% {
+    width: 85%;
+  }
+  86% {
+    width: 86%;
+  }
+  87% {
+    width: 87%;
+  }
+  96% {
+    width: 96%;
+    transition-timing-function: ease-out;
+    opacity: 1;
+  }
+  100% {
+    width: 100%;
+    opacity: 0;
+    display: none;
+  }
+}
+
+.hidden {
+  opacity: 0;
+}
+
 button {
   opacity: 1;
   background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
@@ -362,11 +481,10 @@ button > span {
 }
 
 .btn_link > .commander {
-  margin: 2rem 0px 5rem 0px;
+  margin: 2rem 0px 6rem 0px;
 }
 
 .btn_link > .commander > span {
-  /*marche pas*/
   padding: 0px 40px;
 }
 
@@ -421,14 +539,10 @@ button > span {
     max-width: 1150px;
     padding: 0px 40px 80px 40px;
     gap: 40px;
-    /*marche pas*/
   }
   .restaurants .restaurants_list > .restaurants_card {
     margin: 0px;
     min-width: 295px;
-  }
-  footer {
-    padding: 2.2rem 0rem 2.5rem 4.2rem;
   }
 }
 /*# sourceMappingURL=main.css.map */

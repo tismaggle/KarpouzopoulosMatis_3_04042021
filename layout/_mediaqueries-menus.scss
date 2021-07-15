@@ -1,42 +1,40 @@
-@media (min-width: 800px) {
+@media (min-width: 432px) {
+
+    main {
+
+        .menu {
+            gap: 20px;
+        }
+    }
+}
+
+@media (min-width: 700px) {
 
     img {
         max-height: 400px;
     }
 
     .carte {
-        display: grid;
-        width: 100%;
-        grid-template-columns: repeat(3,1fr);
-        grid-template-rows: auto;
-        gap: 30px;
-        padding: 0px 25px;
+        padding: 2rem;
 
-        .entrees, .plats, .desserts {
-            flex: .33;
+        h2 {
+            max-width: 1000px;
+            margin: 2rem auto 1rem auto;
         }
-    
-        h3 {
-            text-overflow: ellipsis;            /*marche pas*/
+        
+        .global {
+            margin: 0px auto 20px auto;
+            min-width: 636px;
+            max-width: 850px;
         }
     }
-}
 
-@media (min-width: 432px) {
-
-    main {
-        margin: 0px 20px;
-
-        .menu {
-            gap: 20px;
-            border-bottom-left-radius: 25px;
-            border-bottom-right-radius: 25px;
-    
-            > .global {
-                max-width: 400px;
-                margin: auto;
-                margin-bottom: 20px;
-            }
-        }
-    }
+    // .carte {
+    //     display: flex;
+    //     justify-content: space-between;
+    //     gap: 20px;
+    //     padding: 0px 20px;
+    //     white-space: nowrap;
+    //     overflow: auto;
+    // }
 }
