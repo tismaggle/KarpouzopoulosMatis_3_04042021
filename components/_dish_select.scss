@@ -36,8 +36,8 @@
         }
 
         span {
-            animation: price .25s .25s ease-in;
-            animation-fill-mode: forwards;                  /*marche pas*/
+            animation: price .25s .25s cubic-bezier(.17,.67,.83,.67);
+            animation-fill-mode: both;
         
             @keyframes price {
                 0% {

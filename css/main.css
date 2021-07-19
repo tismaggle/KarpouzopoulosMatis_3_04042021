@@ -321,7 +321,15 @@ footer a > .hands {
   -webkit-text-fill-color: transparent;
 }
 
-.progress-bar-chargement {
+.header-bar-chargement {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: transparent;
+  transition-timing-function: ease-out;
+}
+
+.header-bar-chargement .progress-bar-chargement {
   height: 4.5px;
   background: #9356DC;
   animation-duration: 2s;
@@ -329,14 +337,6 @@ footer a > .hands {
   opacity: 0;
   border-radius: 12px;
   transition-timing-function: ease-in;
-}
-
-.header-bar-chargement {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background-color: transparent;
-  transition-timing-function: ease-out;
 }
 
 header, main, footer {
@@ -366,17 +366,14 @@ header, main, footer {
 }
 
 @keyframes loader {
-  1% {
+  0% {
     width: 0;
     opacity: 0;
     display: none;
   }
-  2% {
+  1% {
     opacity: 1;
     display: block;
-  }
-  30% {
-    opacity: 1;
   }
   75% {
     width: 75%;
@@ -427,10 +424,6 @@ header, main, footer {
     opacity: 0;
     display: none;
   }
-}
-
-.hidden {
-  opacity: 0;
 }
 
 button {

@@ -211,9 +211,8 @@ footer a > .hands {
 }
 
 .global:hover span {
-  animation: price .25s .25s ease-in;
-  animation-fill-mode: forwards;
-  /*marche pas*/
+  animation: price 0.25s 0.25s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+  animation-fill-mode: both;
 }
 
 @keyframes price {

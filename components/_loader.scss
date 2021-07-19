@@ -63,22 +63,22 @@
 //     transition-timing-function: ease-out;
 // }
 
-.progress-bar-chargement {
-    height: 4.5px;
-    background: $primary-color;
-    animation-duration: 2s;
-    animation-name: loader;
-    opacity: 0;
-    border-radius: 12px;
-    transition-timing-function: ease-in;
-}
-
 .header-bar-chargement {
     position: fixed;
     top: 0;
     width: 100%;
     background-color: transparent;
     transition-timing-function: ease-out;
+
+    .progress-bar-chargement {
+        height: 4.5px;
+        background: $primary-color;
+        animation-duration: 2s;
+        animation-name: loader;
+        opacity: 0;
+        border-radius: 12px;
+        transition-timing-function: ease-in;
+    }
 }
 
 header, main, footer {
@@ -112,14 +112,11 @@ header, main, footer {
 }
 
 @keyframes loader {
-    1% {
+    0% {
         width: 0; opacity: 0; display: none;
     }
-    2% {
+    1% {
         opacity: 1; display: block;
-    }
-    30% {
-        opacity: 1;
     }
     75% {
         width: 75%;
@@ -166,8 +163,4 @@ header, main, footer {
     100% {
         width: 100%; opacity: 0; display: none;
     }
-}
-
-.hidden {
-    opacity: 0;
 }
