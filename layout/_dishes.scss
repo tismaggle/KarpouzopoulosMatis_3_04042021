@@ -25,12 +25,10 @@
     > .dish_card { 
         display: flex;
         justify-content: space-between;
-        width: 100%;            /*inutile ?*/
+        width: 100%;
         padding: .8rem 1.4rem .8rem .8rem;
 
         > .details {
-            // position: relative;
-            // // right: 70px;            /*inutile ?*/
 
             > h3 {
                 font-size: 1.1rem;
@@ -52,11 +50,7 @@
             display: flex;  
             font-weight: 600;
             align-items: flex-end;
-            // transform-origin: right center;
-            // transition: transform .15s cubic-bezier(.17,.67,.83,.67);
-            // animation-fill-mode: forwards;
             padding-left: 10px;
-            // transition-delay: .35s;
         }
     }
 }

@@ -14,6 +14,10 @@ footer {
         display: block;         /*pour avoir du margin en x et en y*/
         margin: .3rem;
         color: $footer-sec-color;
+        
+        &:hover {
+            text-decoration: underline;
+        }
     
         > .fork {
             margin-right: 1rem;

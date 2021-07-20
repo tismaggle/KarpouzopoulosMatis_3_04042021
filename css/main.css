@@ -76,6 +76,10 @@ footer a {
   color: white;
 }
 
+footer a:hover {
+  text-decoration: underline;
+}
+
 footer a > .fork {
   margin-right: 1rem;
   font-size: .8rem;
