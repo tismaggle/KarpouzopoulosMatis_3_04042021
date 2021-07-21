@@ -34,10 +34,12 @@ body, html {
 /*text font definition*/
 body {
   font-family: 'Roboto', sans-serif;
+  background-color: #f6f6f6;
 }
 
 header {
   height: 62px;
+  background-color: white;
 }
 
 header .arrow {
@@ -290,34 +292,38 @@ footer a > .hands {
   font-size: 1.15rem;
 }
 
-.coeurs {
+.coeurs_menu {
+  margin-top: 10px;
+}
+
+.coeurs, .coeurs_menu {
   position: relative;
   width: 20px;
   height: 20px;
 }
 
-.coeurs:hover .shape_hrt {
+.coeurs:hover .shape_hrt, .coeurs_menu:hover .shape_hrt {
   opacity: 0;
 }
 
-.coeurs:hover .full_hrt {
+.coeurs:hover .full_hrt, .coeurs_menu:hover .full_hrt {
   opacity: 1;
 }
 
-.coeurs > .fa-heart {
+.coeurs > .fa-heart, .coeurs_menu > .fa-heart {
   font-size: 1.5rem;
   cursor: pointer;
   position: absolute;
   top: 0;
   left: 0;
-  transition: opacity 1s;
+  transition: opacity 650ms;
 }
 
-.coeurs .shape_hrt {
+.coeurs .shape_hrt, .coeurs_menu .shape_hrt {
   opacity: 1;
 }
 
-.coeurs .full_hrt {
+.coeurs .full_hrt, .coeurs_menu .full_hrt {
   opacity: 0;
   background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   -webkit-background-clip: text;
@@ -327,105 +333,40 @@ footer a > .hands {
 .header-bar-chargement {
   position: fixed;
   top: 0;
-  width: 100%;
-  background-color: transparent;
-  transition-timing-function: ease-out;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 999;
+  background-color: #d9d9d9;
+  opacity: 1;
+  animation: download_complete .4ms ease 1600ms forwards;
 }
 
-.header-bar-chargement .progress-bar-chargement {
-  height: 4.5px;
-  background: #9356DC;
-  animation-duration: 2s;
-  animation-name: loader;
-  opacity: 0;
-  border-radius: 12px;
-  transition-timing-function: ease-in;
+.header-bar-chargement:after {
+  content: "";
+  border-radius: 50%;
+  width: 70px;
+  margin: auto;
+  margin-top: 15rem;
+  height: 70px;
+  border: 10px solid;
+  border-color: #9356DC #FF79DA #99E2D0 white;
+  transform: rotate(0deg);
+  animation: loading_circle .7s linear infinite;
+  display: block;
 }
 
-header, main, footer {
-  animation-duration: 2s;
-  animation-name: opacity-body;
-}
-
-@keyframes opacity-body {
-  0% {
-    opacity: 0.1;
-  }
-  25% {
-    opacity: .2;
-  }
-  50% {
-    opacity: .45;
-  }
-  75% {
-    opacity: .6;
-  }
-  95% {
-    opacity: .8;
-  }
-  100% {
-    opacity: 1;
+@keyframes loading_circle {
+  to {
+    transform: rotate(360deg);
   }
 }
 
-@keyframes loader {
-  0% {
-    width: 0;
+@keyframes download_complete {
+  to {
     opacity: 0;
     display: none;
-  }
-  1% {
-    opacity: 1;
-    display: block;
-  }
-  75% {
-    width: 75%;
-  }
-  76% {
-    width: 76%;
-  }
-  77% {
-    width: 77%;
-  }
-  78% {
-    width: 78%;
-  }
-  79% {
-    width: 79%;
-  }
-  80% {
-    width: 80%;
-  }
-  81% {
-    width: 81%;
-  }
-  82% {
-    width: 82%;
-  }
-  83% {
-    width: 83%;
-  }
-  84% {
-    width: 84%;
-  }
-  85% {
-    width: 85%;
-  }
-  86% {
-    width: 86%;
-  }
-  87% {
-    width: 87%;
-  }
-  96% {
-    width: 96%;
-    transition-timing-function: ease-out;
-    opacity: 1;
-  }
-  100% {
-    width: 100%;
-    opacity: 0;
-    display: none;
+    z-index: -1;
   }
 }
 
@@ -441,6 +382,7 @@ button {
   justify-content: center;
   font-size: 1rem;
   font-weight: 500;
+  transition: opacity 500ms, box-shadow 500ms;
 }
 
 button:hover {
@@ -485,6 +427,9 @@ button > span {
 }
 
 @media all and (min-width: 700px) {
+  .header-bar-chargement:after {
+    margin-top: 20rem;
+  }
   .logoohmyfood, .localisation {
     justify-content: center;
   }

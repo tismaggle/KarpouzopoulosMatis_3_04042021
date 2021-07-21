@@ -1,54 +1,85 @@
 .global {
     overflow: hidden;
+    position: relative;
+    box-shadow: 0rem .5rem 1rem $box-shadow_color;
+    display: flex;
+    margin: 1rem;
+    border-radius: 15px;
+    background-color: white;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 
-    .details, .details h3, .details p {
+    .details {
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
+        padding: 0.8rem 1.4rem 0.8rem 0.8rem;
+
+        h3 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            white-space: nowrap;
+            overflow: hidden;
+            margin-bottom: 0.4rem;
+            text-overflow: ellipsis;
+        }
+
+        p {
+            font-size: 0.9rem;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    }
+
+    span {
+        position: absolute; 
+        right: 0;
+        bottom: 0;
+        margin-right: 0px;
+        font-weight: 600;
+        width: 20px;
+        padding: 0px .8rem .8rem 0px;
+        margin-right: 1.5rem;
+        transition: margin-right 0.4s;
     }
 
     &__check {
         transform-origin: right center;
-        transition: transform .25s cubic-bezier(.17,.67,.83,.67);
+        transition: transform 0.25s cubic-bezier(0.17, 0.67, 0.83, 0.67);
         animation-fill-mode: forwards;
-        transition-delay: .25s;
+        transition-delay: 0.25s;
         background-color: $animation_color;
         border-bottom-right-radius: 15px;
         border-top-right-radius: 15px;
         margin-right: -70px;
+        margin-left: 2rem;
         width: 70px;
         display: flex;
         align-items: center;
         justify-content: center;
+        transition: margin-right 0.4s;
 
         > .add_to_cart {
             color: white;
             width: 20px;
             font-size: 1.3rem;
-            transition: transform .4s ease-in-out;
-            transition-delay: .2s;
+            transition: transform 0.4s ease-in-out;
+            transition-delay: 0.2s;
         }
     }
 
     &:hover {
         > .global__check {
-            transform: translateX(-70px);
+        margin-right: 0px;
         }
 
         span {
-            animation: price .25s .25s cubic-bezier(.17,.67,.83,.67);
-            animation-fill-mode: both;
-        
-            @keyframes price {
-                0% {
-                    margin-right: 0px;
-                }
-                100% {
-                    margin-right: 60px;
-                }
-            }
+            margin-right: 86px;
         }
-        
+
         & .add_to_cart {
             transform: rotate(360deg);
         }

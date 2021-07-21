@@ -1,118 +1,161 @@
 .header-bar-chargement {
     position: fixed;
     top: 0;
-    width: 100%;
-    background-color: transparent;
-    transition-timing-function: ease-out;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 999;
+    background-color: darken(#f2f2f2, 10%);
+    opacity: 1;
+    animation: download_complete .4ms ease 1600ms forwards;
 
-    .progress-bar-chargement {
-        height: 4.5px;
-        background: $primary-color;
-        animation-duration: 2s;
-        animation-name: loader;
+    &:after {
+        content: "";
+        border-radius: 50%;
+        width: 70px;
+        margin: auto;
+        margin-top: 15rem;
+        height: 70px;
+        border: 10px solid;
+        border-color: $primary-color $secondary-color $tertiary-color white;
+        transform: rotate(0deg);
+        animation: loading_circle .7s linear infinite;
+        display: block;
+    }
+}
+
+@keyframes loading_circle {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes download_complete {
+    to {
         opacity: 0;
-        border-radius: 12px;
-        transition-timing-function: ease-in;
+        display: none;
+        z-index: -1;
     }
 }
 
-header, main, footer {
-    animation-duration: 2s;
-    animation-name: opacity-body;
-}
+// changement du style du loader
+// v.1 loading bar
 
-@keyframes opacity-body {
-    0% {
-        opacity: 0.1;
-    }
+// .header-bar-chargement {
+//     position: fixed;
+//     top: 0;
+//     width: 100%;
+//     background-color: transparent;
+//     transition-timing-function: ease-out;
 
-    25% {
-        opacity: .2;
-    }
+//     .progress-bar-chargement {
+//         height: 4.5px;
+//         background: $primary-color;
+//         animation-duration: 2s;
+//         animation-name: loader;
+//         opacity: 0;
+//         border-radius: 12px;
+//         transition-timing-function: ease-in;
+//     }
+// }
 
-    50% {
-        opacity: .45;
-    }
+// header, main, footer {
+//     animation-duration: 2s;
+//     animation-name: opacity-body;
+// }
 
-    75% {
-        opacity: .6;
-    }
+// @keyframes opacity-body {
+//     0% {
+//         opacity: 0.1;
+//     }
 
-    95% {
-        opacity: .8;
-    }
+//     25% {
+//         opacity: .2;
+//     }
 
-    100% {
-        opacity: 1;
-    }
-}
+//     50% {
+//         opacity: .45;
+//     }
 
-@keyframes loader {
-    0% {
-        width: 0; opacity: 0; display: none;
-    }
+//     75% {
+//         opacity: .6;
+//     }
 
-    1% {
-        opacity: 1; display: block;
-    }
+//     95% {
+//         opacity: .8;
+//     }
 
-    75% {
-        width: 75%;
-    }
+//     100% {
+//         opacity: 1;
+//     }
+// }
 
-    76% {
-        width: 76%;
-    }
+// @keyframes loader {
+//     0% {
+//         width: 0; opacity: 0; display: none;
+//     }
 
-    77% {
-        width: 77%;
-    }
+//     1% {
+//         opacity: 1; display: block;
+//     }
 
-    78% {
-        width: 78%;
-    }
+//     75% {
+//         width: 75%;
+//     }
 
-    79% {
-        width: 79%;
-    }
+//     76% {
+//         width: 76%;
+//     }
 
-    80% {
-        width: 80%;
-    }
+//     77% {
+//         width: 77%;
+//     }
 
-    81% {
-        width: 81%;
-    }
+//     78% {
+//         width: 78%;
+//     }
 
-    82% {
-        width: 82%;
-    }
+//     79% {
+//         width: 79%;
+//     }
 
-    83% {
-        width: 83%;
-    }
+//     80% {
+//         width: 80%;
+//     }
 
-    84% {
-        width: 84%;
-    }
+//     81% {
+//         width: 81%;
+//     }
 
-    85% {
-        width: 85%;
-    }
+//     82% {
+//         width: 82%;
+//     }
 
-    86% {
-        width: 86%;
-    }
+//     83% {
+//         width: 83%;
+//     }
 
-    87% {
-        width: 87%;
-    }
+//     84% {
+//         width: 84%;
+//     }
 
-    96% {
-        width: 96%; transition-timing-function: ease-out; opacity: 1
-    }
+//     85% {
+//         width: 85%;
+//     }
 
-    100% {
-        width: 100%; opacity: 0; display: none;
-    }
-}
+//     86% {
+//         width: 86%;
+//     }
+
+//     87% {
+//         width: 87%;
+//     }
+
+//     96% {
+//         width: 96%; transition-timing-function: ease-out; opacity: 1
+//     }
+
+//     100% {
+//         width: 100%; opacity: 0; display: none;
+//     }
+// }

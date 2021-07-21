@@ -10,6 +10,7 @@ button {
     justify-content: center;
     font-size: 1rem;
     font-weight: 500;
+    transition: opacity 500ms, box-shadow 500ms;
     
         &:hover {
             cursor: pointer;

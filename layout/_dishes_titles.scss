@@ -1,0 +1,15 @@
+.carte h2 {     
+    font-weight: 300; 
+    margin: 2.5rem 0px 1rem 1.2rem;
+    font-size: 1rem;
+
+    &::after {
+        content: "";
+        display: block;
+        width: 38px;
+        height: 0;
+        border: 1.5px solid #99E2D0;
+        background-color: #99E2D0;
+        margin-top: 5px;
+    }
+}

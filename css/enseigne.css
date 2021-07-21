@@ -34,11 +34,12 @@ body, html {
 /*text font definition*/
 body {
   font-family: 'Roboto', sans-serif;
+  background-color: #f6f6f6;
 }
 
 img {
   width: 100%;
-  max-height: 220px;
+  max-height: 280px;
   object-fit: cover;
 }
 
@@ -52,6 +53,7 @@ main {
 
 header {
   height: 62px;
+  background-color: white;
 }
 
 header .arrow {
@@ -71,7 +73,7 @@ header > .logoohmyfood {
 }
 
 .carte h2 {
-  font-weight: 200;
+  font-weight: 300;
   margin: 2.5rem 0px 1rem 1.2rem;
   font-size: 1rem;
 }
@@ -84,44 +86,6 @@ header > .logoohmyfood {
   border: 1.5px solid #99E2D0;
   background-color: #99E2D0;
   margin-top: 5px;
-}
-
-.global {
-  display: flex;
-  box-shadow: 0rem 0.5rem 1rem #eaeaea;
-  margin: 1rem;
-  border-radius: 15px;
-  background-color: white;
-  cursor: pointer;
-}
-
-.global > .dish_card {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  padding: .8rem 1.4rem .8rem .8rem;
-}
-
-.global > .dish_card > .details > h3 {
-  font-size: 1.1rem;
-  font-weight: 600;
-}
-
-.global > .dish_card > .details > .ingredients_price {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 5px;
-}
-
-.global > .dish_card > .details > .ingredients_price > p {
-  font-size: .9rem;
-}
-
-.global > .dish_card > span {
-  display: flex;
-  font-weight: 600;
-  align-items: flex-end;
-  padding-left: 10px;
 }
 
 footer {
@@ -167,7 +131,7 @@ footer a > .hands {
 .enseigne {
   display: flex;
   justify-content: space-between;
-  padding-top: 2rem;
+  padding: 2rem 15px 0px 0px;
   margin: -1rem 1.2rem 0px 1.2rem;
 }
 
@@ -178,53 +142,84 @@ footer a > .hands {
 
 .global {
   overflow: hidden;
+  position: relative;
+  box-shadow: 0rem 0.5rem 1rem #eaeaea;
+  display: flex;
+  margin: 1rem;
+  border-radius: 15px;
+  background-color: white;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
-.global .details, .global .details h3, .global .details p {
+.global .details {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  padding: 0.8rem 1.4rem 0.8rem 0.8rem;
+}
+
+.global .details h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  margin-bottom: 0.4rem;
+  text-overflow: ellipsis;
+}
+
+.global .details p {
+  font-size: 0.9rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.global span {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin-right: 0px;
+  font-weight: 600;
+  width: 20px;
+  padding: 0px .8rem .8rem 0px;
+  margin-right: 1.5rem;
+  transition: margin-right 0.4s;
 }
 
 .global__check {
   transform-origin: right center;
   transition: transform 0.25s cubic-bezier(0.17, 0.67, 0.83, 0.67);
   animation-fill-mode: forwards;
-  transition-delay: .25s;
+  transition-delay: 0.25s;
   background-color: #99E2D0;
   border-bottom-right-radius: 15px;
   border-top-right-radius: 15px;
   margin-right: -70px;
+  margin-left: 2rem;
   width: 70px;
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: margin-right 0.4s;
 }
 
 .global__check > .add_to_cart {
   color: white;
   width: 20px;
   font-size: 1.3rem;
-  transition: transform .4s ease-in-out;
-  transition-delay: .2s;
+  transition: transform 0.4s ease-in-out;
+  transition-delay: 0.2s;
 }
 
 .global:hover > .global__check {
-  transform: translateX(-70px);
+  margin-right: 0px;
 }
 
 .global:hover span {
-  animation: price 0.25s 0.25s cubic-bezier(0.17, 0.67, 0.83, 0.67);
-  animation-fill-mode: both;
-}
-
-@keyframes price {
-  0% {
-    margin-right: 0px;
-  }
-  100% {
-    margin-right: 60px;
-  }
+  margin-right: 86px;
 }
 
 .global:hover .add_to_cart {
@@ -273,34 +268,38 @@ footer a > .hands {
   }
 }
 
-.coeurs {
+.coeurs_menu {
+  margin-top: 10px;
+}
+
+.coeurs, .coeurs_menu {
   position: relative;
   width: 20px;
   height: 20px;
 }
 
-.coeurs:hover .shape_hrt {
+.coeurs:hover .shape_hrt, .coeurs_menu:hover .shape_hrt {
   opacity: 0;
 }
 
-.coeurs:hover .full_hrt {
+.coeurs:hover .full_hrt, .coeurs_menu:hover .full_hrt {
   opacity: 1;
 }
 
-.coeurs > .fa-heart {
+.coeurs > .fa-heart, .coeurs_menu > .fa-heart {
   font-size: 1.5rem;
   cursor: pointer;
   position: absolute;
   top: 0;
   left: 0;
-  transition: opacity 1s;
+  transition: opacity 650ms;
 }
 
-.coeurs .shape_hrt {
+.coeurs .shape_hrt, .coeurs_menu .shape_hrt {
   opacity: 1;
 }
 
-.coeurs .full_hrt {
+.coeurs .full_hrt, .coeurs_menu .full_hrt {
   opacity: 0;
   background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   -webkit-background-clip: text;
@@ -319,6 +318,7 @@ button {
   justify-content: center;
   font-size: 1rem;
   font-weight: 500;
+  transition: opacity 500ms, box-shadow 500ms;
 }
 
 button:hover {
