@@ -149,7 +149,6 @@ footer a > .hands {
   border-radius: 15px;
   background-color: white;
   cursor: pointer;
-  display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
@@ -191,7 +190,6 @@ footer a > .hands {
 
 .global__check {
   transform-origin: right center;
-  transition: transform 0.25s cubic-bezier(0.17, 0.67, 0.83, 0.67);
   animation-fill-mode: forwards;
   transition-delay: 0.25s;
   background-color: #99E2D0;
